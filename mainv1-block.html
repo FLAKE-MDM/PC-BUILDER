@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC BUILDER</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrap" id="wrap">
+        <!-- header -->
+        <header class="header header_transprarent">
+            <div class="container">
+                <div class="d-flex align-items-center">
+                    <a href="#nav" class="btn-menu d-lg-none collapse-link"></a>
+                    <a href="index.html" class="logo header__logo">LOGO</a>
+                    <nav class="nav d-lg-flex align-items-center collapse" id="nav">
+                        <ul class="nav-list d-lg-flex">
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Головна</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Конструктор</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Готові збірки</a></li>
+                            <li class="nav-list__item"><a href="#" class="nav-list__link">Допомога</a></li>
+                        </ul>
+                        <ul class="icons-nav d-flex order-lg-2">
+                            <li class="icons-nav__item"><a href="#" class="icons-nav__link icon icon-compare"></a></li>
+                            <li class="icons-nav__item"><a href="#" class="icons-nav__link icon icon-user"></a></li>
+                        </ul>
+                        <div class="theme d-flex align-items-center text_inversion">
+                            Dark Mode
+                            <label class="checkbox-switch-label">
+                                <input type="checkbox" class="collapse" id="checkbox-switch">
+                                <span class="checkbox-switch"></span>
+                            </label>
+                        </div>
+                    </nav>
+                    <ul class="icons-nav">
+                        <li class="icons-nav__item"><a href="#" class="icons-nav__link icon icon-basket"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+        <!-- preview -->
+        <div class="preview-section preview-section_bg">
+            <div class="container">
+                <div class="preview-section__content text_center text_inversion">
+                    <h1 class="title_size-xl">PC BUILDER</h1>
+                    <h2 class="title preview-section__title text_upper">Створення персонального ПК починається тут</h2>
+                    <a href="#" class="btn btn_large btn_secondary w-100_sm">створити нову збірку</a>
+                </div>
+            </div>
+        </div>
+        <!-- /preview -->
+        <!-- content -->
+        <div class="content">
+          <div class="container">
+            <!-- search -->
+            <div class="search d-none d-md-block">
+              <form action="#">
+                <div class="d-md-flex search__form">
+                  <button class="search__button icon icon-search"></button>
+                  <input type="text" class="search__input" placeholder="Що ви хочете знайти?">
+                  <button class="btn btn_secondary btn_large w-100_sm">
+                    Збірка за допомогою ai
+                    <span class="btn__mark">Бета версія</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- /search -->
+            <!-- configuration -->
+            <section class="configuration-section d-none d-md-block">
+              <h2 class="title text_center mt-xl mb-lg configuration-section__title">Потрібна допомога? <br class="d-md-none"><span class="text_normal">Почніть свою збірку з однією з цих конфігурацій</span></h2>
+              <div class="configuration-slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-item">
+                      <div class="card-item__image"><img src="img/content/card-2.png" alt="" class="img-fluid"></div>
+                      <h3 class="card-item__title title title_size-sm">Базовий рівень</h3>
+                      <div class="card-item__price">До 40 000 грн</div>
+                      <div class="configuration-row d-grid grid-2">
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/intel.svg" alt="intel" class="img-fluid"></div>
+                        </a>
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/amd.svg" alt="amd" class="img-fluid"></div>
+                        </a>
+                      </div>
+                      <a href="#" class="w-100 btn btn_secondary">Переглянути попередню збірку</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-item">
+                      <div class="card-item__image"><img src="img/content/card-2.png" alt="" class="img-fluid"></div>
+                      <h3 class="card-item__title title title_size-sm">Середній рівень</h3>
+                      <div class="card-item__price">До 80 000 грн</div>
+                      <div class="configuration-row d-grid grid-2">
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/intel.svg" alt="intel" class="img-fluid"></div>
+                        </a>
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/amd.svg" alt="amd" class="img-fluid"></div>
+                        </a>
+                      </div>
+                      <a href="#" class="w-100 btn btn_secondary">Переглянути попередню збірку</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-item">
+                      <div class="card-item__image"><img src="img/content/card-2.png" alt="" class="img-fluid"></div>
+                      <h3 class="card-item__title title title_size-sm">Просунутий рівень</h3>
+                      <div class="card-item__price">До 100 000 грн</div>
+                      <div class="configuration-row d-grid grid-2">
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/intel.svg" alt="intel" class="img-fluid"></div>
+                        </a>
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/amd.svg" alt="amd" class="img-fluid"></div>
+                        </a>
+                      </div>
+                      <a href="#" class="w-100 btn btn_secondary">Переглянути попередню збірку</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card-item">
+                      <div class="card-item__image"><img src="img/content/card-2.png" alt="" class="img-fluid"></div>
+                      <h3 class="card-item__title title title_size-sm">Ультра рівень</h3>
+                      <div class="card-item__price">До 120 000 грн</div>
+                      <div class="configuration-row d-grid grid-2">
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/intel.svg" alt="intel" class="img-fluid"></div>
+                        </a>
+                        <a href="#" class="configuration-item">
+                          <p>Збірка з</p>
+                          <div class="configuration-item__logo"><img src="img/icons/amd.svg" alt="amd" class="img-fluid"></div>
+                        </a>
+                      </div>
+                      <a href="#" class="w-100 btn btn_secondary">Переглянути попередню збірку</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+            <!-- /configuration -->
+            <!-- components -->
+            <div class="title text_upper mt-xl mb-lg text_center mb-lg_m d-none d-md-block">Оберіть компоненти</div>
+            <div class="components-nav components-nav_mobile d-flex">
+              <a href="#" class="components-item active">
+                <div class="components-item__icon"><div class="icon icon_double icon-processor"></div></div>
+                <div class="components-item__title text_size-sm">Процесор</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-motherboard"></div></div>
+                <div class="components-item__title text_size-sm">Материнська плата</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-RAM"></div></div>
+                <div class="components-item__title text_size-sm">Оперативна пам'ять</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-video-card"></div></div>
+                <div class="components-item__title text_size-sm">Відеокарта</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-case"></div></div>
+                <div class="components-item__title text_size-sm">Корпус</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-PSU"></div></div>
+                <div class="components-item__title text_size-sm">Блок <br class="d-none d-md-block">живлення</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-HDD"></div></div>
+                <div class="components-item__title text_size-sm">Пристрій зберігання даних</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-cooler"></div></div>
+                <div class="components-item__title text_size-sm">Охолодження процесору</div>
+              </a>
+              <a href="#" class="components-item">
+                <div class="components-item__icon"><div class="icon icon_double icon-OS"></div></div>
+                <div class="components-item__title text_size-sm">Операційна система</div>
+              </a>
+            </div>
+            <div class="d-lg-flex">
+              <!-- filter -->
+              <div class="filter text_size-sm" id="filter">
+                <div class="main-search d-lg-none">
+                  <form action="#">
+                    <input type="text" placeholder="Що ви хочете знайти?" class="main-search__input">
+                    <button class="main-search__button icon icon-search"></button>
+                  </form>
+                </div>
+                <form action="#">
+                  <div class="filter__header filter-item d-flex justify-content-between">
+                    <a href="#filter" class="btn btn_primary pane-close d-lg-none btn_size-smd">Повернутися</a>
+                    <button type="reset" class="btn-clear d-inline-flex align-items-center">
+                      <span class="icon icon-clear btn-clear__icon"></span>
+                      Очистити усі
+                    </button>
+                  </div>
+                  <div class="filter-item">
+                    <div class="switch-item d-flex justify-content-between">
+                      <div class="text_upper text_semibold switch-item__title">Перевірка сумісності</div>
+                      <label class="checkbox-switch-label">
+                        <input type="checkbox" class="collapse" checked>
+                        <span class="checkbox-switch"></span>
+                      </label>
+                    </div>
+                    <div class="switch-item d-flex justify-content-between">
+                      <div class="switch-item__title">Найнижча ціна за 30 днів</div>
+                      <label class="checkbox-switch-label">
+                        <input type="checkbox" class="collapse">
+                        <span class="checkbox-switch"></span>
+                      </label>
+                    </div>
+                    <div class="switch-item d-flex justify-content-between">
+                      <div class="switch-item__title">Безкоштовна доставка</div>
+                      <label class="checkbox-switch-label">
+                        <input type="checkbox" class="collapse" checked>
+                        <span class="checkbox-switch"></span>
+                      </label>
+                    </div>
+                    <div class="switch-item d-flex justify-content-between">
+                      <div class="switch-item__title">В наявності</div>
+                      <label class="checkbox-switch-label">
+                        <input type="checkbox" class="collapse">
+                        <span class="checkbox-switch"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-1" class="filter__link collapse-link dropdown-toggle active">Ціна</a>
+                    <div class="collapse filter-item__body" id="filter-1" style="display: block;">
+                      <div class="range-wrap">
+                        <div class="range" id="price-range"></div>
+                        <div class="range-row d-flex justify-content-between">
+                          <input type="text" id="lower-value" class="range-input">
+                          <input type="text" id="upper-value" class="range-input">
+                        </div>
+                      </div>
+                      <button class="btn w-100 btn_primary filter__btn">Застосувати</button>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-2" class="filter__link collapse-link dropdown-toggle active">Тип роз'єму ЦП</a>
+                    <div class="collapse filter-item__body" id="filter-2" style="display: block;">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input" checked>
+                            Роз'єм Intel
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Розетка AMD
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-3" class="filter__link collapse-link dropdown-toggle active">Серія</a>
+                    <div class="collapse filter-item__body" id="filter-3" style="display: block;">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            AMD Threadripper
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            AMD Ryzen 9
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            AMD Ryzen 7/5
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Intel Core i9
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Intel Core i7
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Intel Core i5
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Intel Core i3
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Intel Celeron / Pentium
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            AMD Ryzen 3
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Інші процесори Intel
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-4" class="filter__link collapse-link dropdown-toggle active">Кількість ядер</a>
+                    <div class="collapse filter-item__body" id="filter-4" style="display: block;">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Одноядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Двоядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            Чотирьохядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            6-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            8-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            10-ядерний (6P+4E)
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            10-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            12-ядерний (8P+4E)
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            12-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            14-ядерний (6P+8E)
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            14-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            16-ядерний (8P+8E)
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            16-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            18-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            24-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            24-ядерний (8P+16E)
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            32-ядерний
+                          </label>
+                        </li>
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            64-ядерний
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-5" class="filter__link collapse-link dropdown-toggle active">Доступність</a>
+                    <div class="collapse filter-item__body" id="filter-5" style="display: block;">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            В наявності
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-6" class="filter__link collapse-link dropdown-toggle">Знижка</a>
+                    <div class="collapse filter-item__body" id="filter-6">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-7" class="filter__link collapse-link dropdown-toggle">Windows 11</a>
+                    <div class="collapse filter-item__body" id="filter-7">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-8" class="filter__link collapse-link dropdown-toggle">Робоча частота</a>
+                    <div class="collapse filter-item__body" id="filter-8">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-9" class="filter__link collapse-link dropdown-toggle">Кеш L3</a>
+                    <div class="collapse filter-item__body" id="filter-9">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-10" class="filter__link collapse-link dropdown-toggle">Кеш L2</a>
+                    <div class="collapse filter-item__body" id="filter-10">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-11" class="filter__link collapse-link dropdown-toggle">Підтримка 64-розрядної версії</a>
+                    <div class="collapse filter-item__body" id="filter-11">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-12" class="filter__link collapse-link dropdown-toggle">Інтегрована графіка</a>
+                    <div class="collapse filter-item__body" id="filter-12">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-13" class="filter__link collapse-link dropdown-toggle">Пристрій охолодження</a>
+                    <div class="collapse filter-item__body" id="filter-13">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-14" class="filter__link collapse-link dropdown-toggle">Підтримка Hyper-Threading</a>
+                    <div class="collapse filter-item__body" id="filter-14">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-15" class="filter__link collapse-link dropdown-toggle">Підтримка технологій віртуалізації</a>
+                    <div class="collapse filter-item__body" id="filter-15">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-16" class="filter__link collapse-link dropdown-toggle">Потужність</a>
+                    <div class="collapse filter-item__body" id="filter-16">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-17" class="filter__link collapse-link dropdown-toggle">FSB, системна шина</a>
+                    <div class="collapse filter-item__body" id="filter-17">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-18" class="filter__link collapse-link dropdown-toggle">Підтримка Hyper-Transport</a>
+                    <div class="collapse filter-item__body" id="filter-18">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-19" class="filter__link collapse-link dropdown-toggle">Типи пам'яті</a>
+                    <div class="collapse filter-item__body" id="filter-19">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <a href="#filter-20" class="filter__link collapse-link dropdown-toggle">Версія PCI Express</a>
+                    <div class="collapse filter-item__body" id="filter-20">
+                      <ul class="check-list">
+                        <li class="check-list__item">
+                          <label class="d-inline-flex align-items-center">
+                            <input type="checkbox" class="form-check-input">
+                            
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- /filter -->
+              <!-- main -->
+              <main class="main">
+                <!-- main__header -->
+                <div class="main__header main__header_bordered d-flex justify-content-between align-items-center">
+                  <div class="main-search">
+                    <form action="#">
+                      <input type="text" placeholder="Що ви хочете знайти?" class="main-search__input">
+                      <button class="main-search__button icon icon-search"></button>
+                    </form>
+                  </div>
+                  <a href="#filter" class="btn btn_primary d-lg-none me-auto pane-open btn_size-smd"><span class="icon icon-filter me-1"></span>Фільтр</a>
+                  <ul class="main-nav d-none d-md-flex">
+                    <li class="main-nav__item ms-1">
+                      <a href="#" class="main-nav__link active"><span class="icon icon-block icon_double"></span></a>
+                    </li>
+                    <li class="main-nav__item ms-1">
+                      <a href="mainv1.html" class="main-nav__link"><span class="icon icon-list icon_double"></span></a>
+                    </li>
+                  </ul>
+                  <div class="sort text_size-xs d-md-none">
+                    <div class="text_semibold text_dark sort__title text_right">Сортування:</div>
+                    <div class="fake-select dropdown">
+                      <a href="#" class="fake-select__link dropdown-toggle">
+                        <span class="fake-select__value">За популярністю</span>
+                      </a>
+                      <div class="dropdown-menu fake-select__dropdown-menu">
+                        <label class="fake-select__item active">
+                          <input type="radio" class="collapse" name="sort">
+                          За популярністю
+                        </label>
+                        <label class="fake-select__item">
+                          <input type="radio" class="collapse" name="sort">
+                          За ціною
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /main__header -->
+                <div class="d-md-grid grid-md-2 grid-xl-3 catalogue-list">
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-4.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-4.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-4.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-4.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-4.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalogue-item">
+                    <div class="catalogue-item__content">
+                      <div class="d-flex d-md-block align-items-center">
+                        <a href="#product" class="catalogue-item__image d-flex justify-content-center modal-open">
+                          <img src="img/content/product-3.png" alt="" class="img-fluid">
+                        </a>
+                        <div class="catalogue-item__col">
+                          <div class="catalogue-item__rating rating">
+                            <div class="rating__active" style="width: 100%;"></div>
+                          </div>
+                          <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                        </div>
+                      </div>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                      <div class="d-grid grid-2 grid_sm">
+                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                      </div>
+                      <div class="catalogue-item__description text_size-sm">
+                        <p class="d-flex justify-content-between">Тип сокету<span>AM5</span></p>
+                        <p class="d-flex justify-content-between">Кількість ядер<span>8</span></p>
+                        <p class="d-flex justify-content-between">Кількість потоків<span>16</span></p>
+                        <p class="d-flex justify-content-between">Тактова частота<span>4.2 ГГц</span></p>
+                        <p class="d-flex justify-content-between">Графічне ядро<span>Radeon Graphics</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text_center"><a href="#" class="btn btn_outline btn_size-smd">Показати ще</a></div>
+                <!-- pagination -->
+                <ul class="pagination d-none d-md-flex justify-content-center">
+                  <li class="pagination__item">
+                    <span class="pagination__link active">1</span>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                  </li>
+                </ul>
+                <!-- /pagination -->
+              </main>
+              <!-- /main -->
+            </div>
+            <!-- /components -->
+            <!-- video -->
+            <div class="title text_center text_upper mt-xxl mb-lg mb-lg_m d-none d-md-block">Дивіться відео Як правильно зібрати ПК</div>
+            <div class="videos-slider swiper d-none d-md-block">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="video-block embed-responsive">
+                    <a href="#" class="play-btn"><span class="icon icon-play"></span></a>
+                    <video src="video/example.mp4" class="embed-responsive-item" poster="video/poster.jpg"></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-block embed-responsive">
+                    <a href="#" class="play-btn"><span class="icon icon-play"></span></a>
+                    <video src="video/example.mp4" class="embed-responsive-item" poster="video/poster.jpg"></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-block embed-responsive">
+                    <a href="#" class="play-btn"><span class="icon icon-play"></span></a>
+                    <video src="video/example.mp4" class="embed-responsive-item" poster="video/poster.jpg"></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-block embed-responsive">
+                    <a href="#" class="play-btn"><span class="icon icon-play"></span></a>
+                    <video src="video/example.mp4" class="embed-responsive-item" poster="video/poster.jpg"></video>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="video-block embed-responsive">
+                    <a href="#" class="play-btn"><span class="icon icon-play"></span></a>
+                    <video src="video/example.mp4" class="embed-responsive-item" poster="video/poster.jpg"></video>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination d-md-none"></div>
+              <div class="videos-slider-thumbs d-none d-md-block swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/content/slide.jpg" alt="" class="img-fill d-block">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/content/slide.jpg" alt="" class="img-fill d-block">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/content/slide.jpg" alt="" class="img-fill d-block">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/content/slide.jpg" alt="" class="img-fill d-block">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/content/slide.jpg" alt="" class="img-fill d-block">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+            <!-- /video -->
+            <!-- questions -->
+            <div class="title text_center text_upper mt-xl mb-lg mb-lg_m d-none d-md-block">ПИТАННЯ ЩО ЧАСТО ЗАДАЮТЬСЯ</div>
+            <div class="question-slider swiper d-none d-md-block">
+              <div class="swiper-wrapper grid-xl-3 d-md-grid grid-md-2">
+                <div class="swiper-slide">
+                  <div class="question-item">
+                    <div class="question-item__title text_semibold">З якого компонента мені почати процес складання ПК?</div>
+                    <div class="question-item__text text_dark">Ми рекомендуємо почати з процесора, оскільки він визначає більшість ваших компонентів. Ваша материнська плата, оперативна пам’ять і навіть ваша потреба у графічній карті – все залежить від того, який процесор ви виберете. Ось чому вибір процесора Intel або AMD є першим і найважливішим кроком на шляху створення вашого ПК.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question-item">
+                    <div class="question-item__title text_semibold">Що таке форм-фактор? Яка різниця між E-ATX, ATX, Micro-ATX і Mini-ITX?</div>
+                    <div class="question-item__text text_dark">Ви можете думати про форм-фактор так само, як про розміри автомобіля. Материнські плати мають однакові розміри, як і компактний, середньорозмірний або повнорозмірний автомобіль. У комп’ютерах компактного чи малого форм-фактора використовуються материнські плати Micro або Mini-ITX, у збірках середнього розміру використовуються материнські плати розміру ATX і, нарешті, у повнорозмірних збірках використовується форм-фактор E-ATX.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question-item">
+                    <div class="question-item__title text_semibold">ПК якого розміру мені потрібно зібрати?</div>
+                    <div class="question-item__text text_dark">Вибираючи розмір ПК, слід пам’ятати про деякі речі. Комп’ютери малого форм-фактора накладають певні обмеження на компоненти, які можна використовувати у своєму ПК, і, враховуючи їхній розмір, створюють проблеми зі створенням. ATX або комп’ютери середнього розміру є найпоширенішими збірками та забезпечують найбільші варіанти сумісності. Вони також є одними з найпростіших для складання ПК. Нарешті, E-ATX надає набагато більше можливостей і потужності, але розмір ПК може бути страшним і займатиме багато місця. Часто це найдорожчий варіант будівництва.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question-item">
+                    <div class="question-item__title text_semibold">Скільки оперативної пам'яті я повинен купити?</div>
+                    <div class="question-item__text text_dark">Обсяг оперативної пам’яті, який потрібен вашому комп’ютеру, залежить від того, для чого ви плануєте його використовувати. Як мінімум ми рекомендуємо не менше 8 ГБ оперативної пам’яті, але якщо ви використовуєте свій комп’ютер лише для виконання простих повсякденних завдань, наприклад перегляду веб-сторінок, можливо, ви зможете обійтися лише 4 ГБ. Якщо ви граєте, то мінімум 16 ГБ, а якщо ви транслюєте або редагуєте відео, рекомендовано 32 ГБ. Щоб дізнатися більше про це, прочитайте наш посібник із купівлі оперативної пам’яті на сайті.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question-item">
+                    <div class="question-item__title text_semibold">Наскільки важко створити ПК?</div>
+                    <div class="question-item__text text_dark">Зібрати комп’ютер не складніше, ніж завершити набір Lego або побудувати предмет меблів, якщо у вас є сумісні компоненти. В Інтернеті на таких платформах, як YouTube, доступно так багато дивовижних посібників, які крок за кроком проведуть вас через процес складання ПК. Ми також рекомендуємо приєднатися до спільноти ПК, як-от Newegg Discord, яка допоможе вам відповісти на запитання, які можуть виникнути. Щоб отримати інформацію на цю тему, ми рекомендуємо переглянути наш посібник зі створення ПК і ознайомитися з покроковим процесом.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="question-item">
+                    <div class="question-item__title text_semibold">Які інструменти мені потрібні, щоб створити свій ПК?</div>
+                    <div class="question-item__text text_dark">Ми рекомендуємо хрестоподібну викрутку номер 2, бажано магнітну. Якщо ви збираєтеся будувати на килимі або в місці, схильному до статики, настійно рекомендується мати антистатичний браслет. Також доцільно взяти термопасту та трохи ізопропілового спирту. Нарешті, застібки-блискавки або кабельні стяжки-липучки стають у нагоді, коли ви керуєте кабелями.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination d-md-none"></div>
+            </div>
+            <!-- /questions -->
+            <!-- faq -->
+            <div class="title text_center text_upper mt-xl mb-lg mb-lg_m d-none d-md-block">інші питання про збірку пк</div>
+            <div class="d-md-grid grid-md-2 d-none d-md-block">
+              <div class="faq-item">
+                <a href="#faq-1" class="faq-item__link dropdown-toggle text_semibold collapse-link collapse-link">Чи все ще пропонуються набори для збірки ПК?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-1">Обсяг оперативної пам’яті, який потрібен вашому комп’ютеру, залежить від того, для чого ви плануєте його використовувати. Як мінімум ми рекомендуємо не менше 8 ГБ оперативної пам’яті, але якщо ви використовуєте свій комп’ютер лише для виконання простих повсякденних завдань, наприклад перегляду веб-сторінок, можливо, ви зможете обійтися лише 4 ГБ. Якщо ви граєте, то мінімум 16 ГБ, а якщо ви транслюєте або редагуєте відео, рекомендовано 32 ГБ. Щоб дізнатися більше про це, прочитайте наш посібник із купівлі оперативної пам’яті на сайті.</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-2" class="faq-item__link dropdown-toggle text_semibold collapse-link">Які частини комп’ютера потрібні для створення ПК?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nostrum hic error sed iusto quasi voluptas odio temporibus accusantium recusandae praesentium optio voluptatem voluptatibus, illum vero inventore non nesciunt natus ad alias fugit quas. Sunt totam quis delectus voluptatum dolor facilis vel, commodi sint, ipsam quidem beatae hic iste ut.</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-3" class="faq-item__link dropdown-toggle text_semibold collapse-link">Що таке ЦП?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolores delectus optio eaque praesentium asperiores ut velit veniam odio consectetur, saepe numquam dolorem, sequi libero? Commodi itaque tenetur beatae rem quam accusantium officia ullam a, consectetur voluptate quia? Totam rerum dicta, molestiae error et sit perspiciatis commodi laborum ducimus vitae.</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-4" class="faq-item__link dropdown-toggle text_semibold collapse-link">Що робить материнська плата?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta delectus aut vero molestiae nemo placeat voluptatem consequuntur. Quasi suscipit voluptates nesciunt ea in quas laudantium, voluptatem provident. Perferendis ab ullam optio, ad culpa officia rerum ipsam fugit ipsa harum unde architecto molestias nam accusantium. Provident earum voluptatum voluptates distinctio repellat?</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-5" class="faq-item__link dropdown-toggle text_semibold collapse-link">Що таке оперативна пам'ять і скільки її потрібно?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fuga enim quisquam doloremque impedit obcaecati dolorum voluptatum voluptates eveniet magni. Libero eaque beatae veniam optio omnis accusantium. Velit voluptatibus reprehenderit placeat, pariatur praesentium doloribus id delectus. Quia non laborum quaerat expedita totam, consectetur atque, adipisci, omnis dolorem minima corrupti error?</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-6" class="faq-item__link dropdown-toggle text_semibold collapse-link">Вам потрібна відеокарта?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi beatae fuga nisi ab quae at recusandae mollitia excepturi rem a ea eveniet voluptatibus odio, quis officiis voluptatem distinctio temporibus similique doloribus tempore asperiores numquam consequuntur hic. Autem itaque nemo ut molestiae molestias, inventore mollitia illum sapiente ex, porro iure natus.</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-7" class="faq-item__link dropdown-toggle text_semibold collapse-link">Які є різні накопичувачі даних?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi repudiandae omnis pariatur, deleniti dolores enim quia quas blanditiis optio ut minima amet exercitationem maiores qui incidunt molestias officia dolor delectus excepturi, alias provident sapiente quos. Incidunt corporis cum autem quaerat, praesentium ad eligendi labore. Autem quisquam totam exercitationem magnam minima.</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-8" class="faq-item__link dropdown-toggle text_semibold collapse-link">Що робить блок живлення (БП)?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ex recusandae, ea iste laudantium esse error accusamus quas, nesciunt culpa provident, corrupti consequuntur temporibus repellendus molestiae quo? Porro ut cupiditate accusantium assumenda eligendi, quis sint, tenetur facere excepturi esse consectetur saepe. Distinctio nam saepe tempora totam cupiditate voluptatum veniam temporibus.</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-9" class="faq-item__link dropdown-toggle text_semibold collapse-link">Наскільки великим має бути корпус ПК?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sequi amet consequuntur magnam sit minus aspernatur alias sed labore quibusdam est quidem illo, debitis repudiandae id ducimus neque. Vitae optio suscipit error illo nisi autem ea at minima tenetur animi ipsum, perspiciatis a quia cumque recusandae vel, repudiandae aspernatur modi?</div>
+              </div>
+              <div class="faq-item">
+                <a href="#faq-10" class="faq-item__link dropdown-toggle text_semibold collapse-link">Повітряне чи рідинне охолодження?</a>
+                <div class="collapse faq-item__text text_dark" id="faq-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor veritatis accusantium nulla molestias minus illum placeat rerum facilis quibusdam, exercitationem iure, inventore natus laborum? Sequi architecto commodi eos, iure ullam temporibus ab fugiat nihil quia impedit libero repellendus unde sed vitae quaerat expedita, excepturi molestias ipsum mollitia exercitationem et cum?</div>
+              </div>
+            </div>
+            <!-- /faq -->
+          </div>
+        </div>
+        <!-- /content -->
+        <!-- footer -->
+        <footer class="footer text_inversion">
+            <a href="#wrap" class="up-link"><span class="icon icon-up"></span></a>
+            <div class="container">
+                <div class="d-md-flex justify-content-between">
+                    <div class="footer__links">
+                        <a href="#" class="footer-link text_inversion text_semibold d-inline-flex align-items-center">
+                            Нова збірка
+                            <span class="footer-link__icon icon icon-pensil"></span>
+                        </a>
+                        <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
+                            <span class="footer-link__icon icon icon-del"></span>
+                            Очистити
+                        </a>
+                        <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
+                            <span class="footer-link__icon icon icon-save"></span>
+                            Зберегти збірку
+                        </a>
+                        <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
+                            <span class="footer-link__icon icon icon-user icon-user_sm"></span>
+                            Мої збірки
+                        </a>
+                    </div>
+                    <div class="footer__price">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="text_semibold text_size-xs footer__pover d-flex align-items-center">
+                                <span class="icon icon-power"></span>0 Вт
+                            </div>
+                            <div class="title">0 грн</div>
+                        </div>
+                        <a href="#" class="btn btn_secondary btn_size-md footer__btn btn_large w-100_sm"><span class="icon icon-basket btn__icon"></span>Додати у кошик</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+    </div>
+
+    #product
+    <!-- product -->
+    <div class="modal fade" id="login">
+      <div class="modal-dialog">
+          <div class="modal__content">
+              <div class="modal__header text_mediumbold text_upper">
+                  Вход
+                  <button type="button" class="icon modal-close modal__close icon-close-circle"></button>
+              </div>
+              <div class="tab-section">
+                  <ul class="tab-nav tab-nav_sm d-flex">
+                      <li class="tab-nav__item"><a href="#passive-login" class="tab-link tab-nav__link active">Пассивный заработок</a></li>
+                      <li class="tab-nav__item"><a href="#public-login" class="tab-link tab-nav__link">Публичный трейдинг</a></li>
+                  </ul>
+                  <div class="modal__body">
+                      <div class="tab-content">
+                          <div class="tab-pane active" id="passive-login">
+                              <form action="#">
+                                  <div class="form-group">
+                                      <label class="form-label">
+                                          <span class="icon icon-email-primary form-icon"></span>
+                                          <input type="email" class="form-control" placeholder="E-mail">
+                                      </label>
+                                  </div>
+                                  <div class="form-group">
+                                      <label class="form-label">
+                                          <span class="icon icon-lock-primary form-icon"></span>
+                                          <input type="password" class="form-control" placeholder="Пароль">
+                                      </label>
+                                  </div>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <p><button class="btn btn_size-sm-large">Войти</button></p>
+                                      <p class="text_center_sm"><a href="#" class="text_dark text_size-sm text_normal">Забыли пароль?</a></p>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="tab-pane" id="public-login">
+                              <div class="tab-pane active" id="passive-login">
+                                  <form action="#">
+                                      <div class="form-group">
+                                          <label class="form-label">
+                                              <span class="icon icon-email-primary form-icon"></span>
+                                              <input type="email" class="form-control" placeholder="E-mail">
+                                          </label>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="form-label">
+                                              <span class="icon icon-phone-primary form-icon"></span>
+                                              <input type="tel" class="form-control" placeholder="Телефон">
+                                          </label>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="form-label">
+                                              <span class="icon icon-lock-primary form-icon"></span>
+                                              <input type="password" class="form-control" placeholder="Пароль">
+                                          </label>
+                                      </div>
+                                      <div class="d-flex justify-content-between align-items-center">
+                                          <p><button class="btn btn_size-sm-large">Войти</button></p>
+                                          <p class="text_center_sm"><a href="#" class="text_dark text_size-sm text_normal">Забыли пароль?</a></p>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="modal__footer d-flex justify-content-between text_size-sm text_normal text_center_sm">
+                      <p class="text_dark">Еще нет аккаунта?</p>
+                      <p><a href="#registration" class="modal-open">Зарегистрироваться</a></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- /product -->
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

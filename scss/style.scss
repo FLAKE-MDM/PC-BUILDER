@@ -1,0 +1,242 @@
+
+@import 'fonts';
+@import 'reset';
+@import 'mixin';
+@import 'variables';
+@import 'vendor';
+@import 'icons';
+@import 'buttons';
+@import 'typography';
+@import 'grid';
+
+
+
+
+
+
+body{
+    font: 400 1.6rem/normal 'Montserrat', Arial, sans-serif;
+    font-variant-numeric: lining-nums;
+    color: $black;
+    background: #fff;
+
+    @include bp(md){
+
+    }
+    @include bp(sm){
+
+    }
+
+    &.overflow-none{
+        overflow: hidden;
+        @include bp(xl-up){
+            padding-right: 1.7rem;
+        }
+    }
+}
+
+.wrap{
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+    width: 100%;
+
+    @include bp(md-up){
+        max-width: 750px;
+    }
+
+    @include bp(lg-up){
+        max-width: 970px;
+    }
+
+    @include bp(xl-up){
+        max-width: 1140px;
+    }
+
+    @include bp(xxl-up){
+        max-width: 1320px;
+    }
+
+    @include bp(xxxxl-up){
+        max-width: 1620px;
+    }
+}
+
+.pos-rel{
+    position: relative;
+    z-index: 1;
+}
+.img-fluid{
+    display: block;
+    max-width: 100%;
+}
+.img-fill{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg{
+    &_primary{
+
+    }
+}
+
+.content{
+    padding-bottom: 13.8rem;
+
+    @include bp(sm){
+      padding-bottom: 5.8rem;
+    }
+}
+
+
+// swiper
+.swiper{
+    &-pagination{
+        position: static;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+
+        &.swiper-pagination-lock{
+            margin: 0;
+        }
+
+        &-bullet{
+            width: 1.2rem;
+            height: 1.2rem;
+            display: block;
+            margin: 0 0.4rem!important;
+            opacity: 1;
+            background: #D4D4F0;
+            transition: all 0.3s ease-out;
+
+            &-active{
+                background: $primary;
+            }
+
+            @include bp(hv){
+                background: $primary;
+            }
+        }
+    }
+
+    &-button-prev, &-button-next{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 1.5rem;
+        height: 2.6rem;
+    }
+
+    &-button-prev{
+        left: 0;
+
+        &:after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: url(../img/icons/prev.svg) 0 0 no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &-button-next{
+        right: 0;
+
+        &:after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: url(../img/icons/next.svg) 0 0 no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+// breadcrumb
+.breadcrumb{
+    margin: 3.2rem 0 1.4rem;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    @include bp(md){
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin: 1.7rem 0 0.5rem;
+    }
+    &__item{
+        margin-bottom: 1rem;
+    }
+    &__item+&__item{
+        &:before{
+            content: '–';
+            color: #000;
+            display: inline-block;
+            margin: 0 0.7rem;
+            @include bp(md){
+                margin: 0 0.55rem;
+            }
+        }
+    }
+}
+
+// pagination
+.pagination{
+    margin: 2rem 0 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+
+    @include bp(md){
+        // margin: 3.1rem 0 3.9rem;
+    }
+    &__item{
+        margin: 0 0.5rem;
+    }
+    &__link{
+        width: 2.2rem;
+        height: 2.2rem;
+        border: 1px solid $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.2rem;
+
+        @include bp(hv){
+            &:hover{
+                color: #fff;
+                background: $black;
+            }
+        }
+
+        &.active{
+            color: #fff;
+            background: $black;
+        }
+    }
+}
+
+
+@import 'form';
+@import 'header';
+@import 'home';
+@import 'footer';
+@import 'main';
+
+
+
+
+
+
+

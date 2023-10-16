@@ -1,0 +1,181 @@
+.header{
+    padding: 1.9rem 0;
+    background: #404040;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+    z-index: 50;
+
+    @include bp(md){
+        padding: 1rem 0;
+    }
+
+    &_transprarent{
+        background: none;
+        box-shadow: none;
+    }
+
+    &__logo{
+        margin-right: 9.5%;
+
+        @include bp(lg){
+            margin-right: 0;
+        }
+
+        @include bp(md){
+            margin: auto;
+        }
+    }
+}
+
+.logo{
+    flex-shrink: 0;
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include bp(hv){
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
+
+.nav{
+    flex-grow: 1;
+
+    @include bp(md){
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 3rem 1rem;
+        background: #fff;
+        z-index: 5;
+    }
+
+    .icons-nav{
+        @include bp(md){
+            margin: 3rem 0.2rem 4.5rem 0;
+            justify-content: center;
+        }
+
+        .icons-nav__item{
+            @include bp(md){
+                margin: 0 1rem;
+            }
+        }
+
+        .icon-compare{
+            @include bp(md){
+                background-image: url(../img/icons/compare-dark.svg);
+            }
+        }
+
+        .icon-user{
+            @include bp(md){
+                background-image: url(../img/icons/user-dark.svg);
+            }
+        }
+    }
+
+    &-list{
+        margin: 0 auto;
+
+        @include bp(sm){
+            border-bottom: 1px solid #D4D4F0;
+            padding: 0.2rem 0 0.9rem;
+        }
+
+        &__item{
+            margin: 0 4.3rem;
+
+            @include bp(xl){
+                margin: 0 3rem;
+            }
+
+            @include bp(lg){
+                margin: 0 2rem;
+            }
+
+            @include bp(md){
+                margin: 0 0 2.1rem;
+            }
+        }
+        &__link{
+            font-weight: 500;
+            display: inline-flex;
+            color: #fff;
+
+            &.active{
+                color: $secondary;
+            }
+
+            @include bp(hv){
+                &:hover{
+                    color: $secondary;
+                }
+            }
+
+            @include bp(md){
+                color: $black;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.btn-menu{
+    display: block;
+    border: none;
+    align-self: center;
+    background: none;
+    flex-shrink: 0;
+    margin: -0.1rem 2rem 0 0;
+    width: 2.4rem;
+    height: 2rem;
+    background: url(../img/icons/menu.svg) 50% 50% no-repeat;
+    background-size: contain;
+
+    &.active{
+        background-image: url(../img/icons/menu-close.svg);
+    }
+}
+
+.icons-nav {
+    margin-top: 0.5rem;
+
+    &__item {
+        margin-left: 2rem;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-flex;
+
+        @include bp(hv){
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .icon-basket{
+        margin: -0.2rem 0 0 -0.1rem;
+    }
+}
+
+.theme{
+    font-size: 1rem;
+    font-weight: 500;
+
+    @include bp(md){
+      color: $black;
+      justify-content: center;
+    }
+
+    .checkbox-switch-label{
+        margin-top: -0.1rem;
+    }
+}

@@ -1,0 +1,129 @@
+a{
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: $black;
+
+    &:hover{
+        // color: $secondary;
+    }
+}
+// .link_underline{
+//     display: inline-block;
+//     padding-bottom: 0.8rem;
+//     border-bottom: 1px solid $primary;
+//     &:hover{
+//         text-decoration: none!important;
+//         border-color: transparent;
+//     }
+// }
+p{
+    margin-bottom: 1.6rem;
+}
+.title{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: normal;
+
+    @include bp(sm){
+       font-size: 1.8rem;
+    }
+
+    &_size{
+        &-xs{
+            
+        }
+        &-sm{
+            font-size: 1.8rem;
+            line-height: normal;
+        }
+        &-md{
+            
+        }
+        &-lg{
+            
+        }
+        &-xl{
+            font-size: 9.6rem;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: uppercase;
+
+            @include bp(sm){
+                font-size: 4.8rem;
+            }
+        }
+    }
+
+}
+.text{
+    &_upper{
+        text-transform: uppercase;
+    }
+    // size
+    &_size{
+        &-xs{
+            font-size: 1.2rem;
+        }
+        &-sm{
+            font-size: 1.3rem;
+            line-height: 138.462%;
+        }
+        &-md{
+            font-size: 1.8rem;
+            line-height: normal;
+
+            @include bp(sm){
+                font-size: 1.6rem;
+                line-height: 125%;
+            }
+        }
+        &-lg{
+            
+        }
+        &-xl{
+            
+        }
+    }
+    // colors
+    &_primary{
+        
+    }
+
+    &_inversion{
+        color: #fff;
+    }
+
+    &_dark{
+        color: $dark;
+    }
+
+    // weight
+    &_normal{
+        font-weight: 400;
+    }
+    &_mediumbold{
+        font-weight: 500;
+    }
+    &_semibold{
+        font-weight: 600;
+    }
+    &_bold{
+        font-weight: 700;
+    }
+    // alignment
+    &_center{
+        text-align: center;
+        &_sm{
+            @include bp(sm){
+                text-align: center;
+            }
+        }
+    }
+    &_left{
+        text-align: left!important;
+    }
+    &_right{
+        text-align: right!important;
+    }
+}
+

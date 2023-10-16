@@ -1,0 +1,213 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.3rem;
+    padding: 1.6rem 2.4rem 1.7rem;
+    line-height: normal;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+    position: relative;
+    border: none;
+    color: #fff;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    border-radius: 0.3rem;
+
+    @include bp(sm){
+        padding: 1.65rem 2.4rem;
+    }
+
+    @include bp(hv){
+        &:hover{
+            color: #fff;
+        }
+    }
+
+    &:disabled, &.disabled{
+        cursor: default;
+        pointer-events: none;
+        background: gray;
+        color: gray;
+    }
+
+    &__icon{
+        margin: -1rem 1rem -1rem 0;
+
+        @include bp(sm){
+            margin-left: -0.3rem;
+        }
+    }
+
+    &__mark{
+        position: absolute;
+        color: #fff;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: 600;
+        border-radius: 0.9rem;
+        background: #E035CF;
+        right: -0.8rem;
+        top: -0.9rem;
+        padding: 0.2rem 0.9rem 0.3rem;
+        display: block;
+        text-transform: none;
+
+        @include bp(sm){
+            right: -0.5rem;
+        }
+    }
+
+    &_secondary{
+        background: $secondary;
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            right: 0;
+            border-radius: 0.3rem;
+            transition: all 0.3s ease-out;
+            background: linear-gradient(96deg, #E035CF -18.5%, #001BF3 97.74%);
+        }
+
+        @include bp(hv){
+            &:hover{
+                color: #fff;
+
+                &:before{
+                    width: 0;
+                }
+            }
+        }
+    }
+
+    &_primary{
+        background: $primary;
+
+        @include bp(hv){
+            &:hover{
+                background: darken($color: $primary, $amount: 10);
+            }
+        }
+    }
+
+    &_outline{
+        background: #fff;
+        color: #000;
+        border: 1px solid $black;
+        font-weight: normal;
+
+        @include bp(hv){
+            &:hover{
+                background: $black;
+                border-color: $black;
+                color: #fff;
+            }
+        }
+    }
+
+    // &_light{
+    //     background:#fff;
+    //     color: $secondary;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $primary;
+    //             border-color: $primary;
+    //         }
+    //     }
+    // }
+
+    // &_transparent{
+    //     background:none;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $primary;
+    //             border-color: $primary;
+    //         }
+    //     }
+    // }
+
+    // &_transparent-primary{
+    //     background: none;
+    //     border-color: $primary;
+    //     color: $primary;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $primary;
+    //             border-color: $primary;
+    //         }
+    //     }
+    // }
+
+    // &_transparent-secondary{
+    //     background: none;
+    //     border-color: $secondary;
+    //     color: $secondary;
+
+    //     @include bp(hv){
+    //         &:hover{
+    //             background: $secondary;
+    //             border-color: $secondary;
+    //         }
+    //     }
+    // }
+
+    &_size{
+        // &-xs{
+        //     text-transform: none;
+        //     padding: 0.9rem 1.6rem;
+
+        //     &.btn_outline{
+        //         padding: 0.8rem 1.6rem;
+        //         text-transform: none;
+        //     }
+        // }
+
+        &-sm{
+            padding: 0.9rem 1.6rem;
+            text-transform: none;
+
+            &.btn_outline{
+                padding: 0.8rem 1.6rem;
+                text-transform: none;
+            }
+        }
+
+        &-smd{
+            padding: 1.2rem 4.2rem;
+            text-transform: none;
+
+            &.btn_outline{
+                padding: 1.1rem 4.1rem;
+                text-transform: none;
+            }
+        }
+
+        &-md{
+            font-size: 1.4rem;
+            text-transform: none;
+            padding: 1.1rem 2.4rem;
+        }
+    }
+
+    &_large{
+        width: 33rem;
+        max-width: 100%;
+    }
+}
+
+
+
+

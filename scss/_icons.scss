@@ -1,0 +1,263 @@
+.icon{
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: 0 0;
+    display: inline-block;
+    flex-shrink: 0;
+
+    &_double{
+        position: relative;
+
+        @include bp(hv){
+            &:hover{
+                &:before{opacity: 0;}
+                &:after{opacity: 1;}
+            }
+        }
+
+        &:before, &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-out;
+        }
+        &:after{
+            opacity: 0;
+        }
+    }
+    .active>&, .components-item.active &{
+        &:before{opacity: 0;}
+        &:after{opacity: 1;}
+    }
+
+    @include bp(hv){
+        a:hover>&{
+            &:before{opacity: 0;}
+            &:after{opacity: 1;}
+        }
+    }
+}
+.icon-compare{
+    width: 2.5rem;
+    height: 2.2rem;
+    background-image: url(../img/icons/compare.svg);
+}
+.icon-user{
+    width: 2rem;
+    height: 2.2rem;
+    background-image: url(../img/icons/user.svg);
+
+    &_sm{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+}
+.icon-basket{
+    width: 2.5rem;
+    height: 2.2rem;
+    background-image: url(../img/icons/basket.svg);
+}
+.icon-up{
+    width: 1.6rem;
+    height: 1rem;
+    background-image: url(../img/icons/up.svg);
+}
+.icon-power{
+    width: 1.2rem;
+    height: 1.4rem;
+    margin-right: 0.78rem;
+    background-image: url(../img/icons/power.svg);
+}
+.icon-pensil{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../img/icons/pensil.svg);
+}
+.icon-save{
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(../img/icons/save.svg);
+}
+.icon-del{
+    width: 1.3rem;
+    height: 1.4rem;
+    background-image: url(../img/icons/del.svg);
+}
+.icon-search{
+    width: 2.4rem;
+    height: 2.4rem;
+    background-image: url(../img/icons/search.svg);
+}
+.icon-processor{
+    width: 4.8rem;
+    height: 4.8rem;
+
+    &:before{
+        background-image: url(../img/icons/processor.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/processor-active.svg);
+    }
+}
+.icon-motherboard{
+    width: 4.8rem;
+    height: 4.6rem;
+
+    &:before{
+        background-image: url(../img/icons/motherboard.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/motherboard-active.svg);
+    }
+}
+.icon-RAM{
+    width: 4.8rem;
+    height: 3rem;
+
+    &:before{
+        background-image: url(../img/icons/RAM.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/RAM-active.svg);
+    }
+}
+.icon-video-card{
+    width: 4.8rem;
+    height: 3.3rem;
+
+    &:before{
+        background-image: url(../img/icons/video-card.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/video-card-active.svg);
+    }
+}
+.icon-case{
+    width: 2.5rem;
+    height: 4.8rem;
+
+    &:before{
+        background-image: url(../img/icons/case.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/case-active.svg);
+    }
+}
+.icon-PSU{
+    width: 4.7rem;
+    height: 4.8rem;
+
+    &:before{
+        background-image: url(../img/icons/PSU.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/PSU-active.svg);
+    }
+}
+.icon-HDD{
+    width: 3.7rem;
+    height: 4.8rem;
+
+    &:before{
+        background-image: url(../img/icons/HDD.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/HDD-active.svg);
+    }
+}
+.icon-cooler{
+    width: 4.8rem;
+    height: 4.8rem;
+
+    &:before{
+        background-image: url(../img/icons/cooler.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/cooler-active.svg);
+    }
+}
+.icon-OS{
+    width: 4.8rem;
+    height: 4.4rem;
+
+    &:before{
+        background-image: url(../img/icons/OS.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/OS-active.svg);
+    }
+}
+.icon-clear{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url(../img/icons/clear.svg);
+}
+.icon-block{
+    width: 2.2rem;
+    height: 2.2rem;
+
+    &:before{
+        background-image: url(../img/icons/block.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/block-active.svg);
+    }
+}
+.icon-list{
+    width: 2.2rem;
+    height: 2.2rem;
+
+    &:before{
+        background-image: url(../img/icons/list.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/list-active.svg);
+    }
+}
+.icon-play{
+    width: 9.6rem;
+    height: 9.6rem;
+    background-image: url(../img/icons/play.svg);
+
+    @include bp(md){
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+}
+.icon-filter{
+    width: 1.6rem;
+    height: 1.4rem;
+    background-image: url(../img/icons/filter.svg);
+}
+
+
+
+
+
+
+
+
+
+.icon-{
+    width: rem;
+    height: rem;
+    background-image: url(../img/icons/.svg);
+}
+
+.icon-{
+    width: rem;
+    height: rem;
+
+    &:before{
+        background-image: url(../img/icons/.svg);
+    }
+    &:after{
+        background-image: url(../img/icons/-active.svg);
+    }
+}

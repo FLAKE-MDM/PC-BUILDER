@@ -1,1 +1,1 @@
-﻿# [PC-BUILDER](https://flake-mdm.github.io/lubodom/)
+﻿# [PC-BUILDER](https://flake-mdm.github.io/PC-BUILDER/)

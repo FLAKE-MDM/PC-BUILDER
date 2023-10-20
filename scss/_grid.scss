@@ -14,8 +14,16 @@
   justify-content: center!important;
 }
 
+.justify-content-end{
+  justify-content: flex-end!important;
+}
+
 .flex-column{
   flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .d{
@@ -169,6 +177,12 @@
     grid-gap: 2rem;
   }
 
+  &_xs-mobile{
+    @include bp(sm){
+      grid-gap: 0.8rem;
+    }
+  }
+
   &-2{
     grid-template-columns: repeat(2, 1fr);
   }
@@ -244,6 +258,12 @@
 
 .col-2{
   grid-column: span 2;
+
+  &-md{
+    @include bp(md-up){
+      grid-column: span 2;
+    }
+  }
 }
 
 .col-3{
@@ -282,6 +302,18 @@
 }
 
 .mt{
+  &-xs{
+    &_mobile{
+      @include bp(sm){
+        margin-top: 2rem!important;
+      }
+    }
+  }
+
+  &-sm{
+    margin-top: 3rem;
+  }
+
   &-md{
     margin-top: 4rem;
   }
@@ -321,7 +353,7 @@
   }
 
   &-sm{
-    // margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
   }
 
   &-md{
@@ -332,7 +364,9 @@
     margin-bottom: 5rem;
 
     @include bp(sm){
-      margin-bottom: 2.9rem;
+      &:not(.no-change){
+        margin-bottom: 2.9rem;
+      }
     }
 
     &_m{
@@ -343,7 +377,19 @@
   }
 
   &-xl{
-    // margin-bottom: 5rem;
+    margin-bottom: 6rem;
+
+    &_mobile{
+      @include bp(sm){
+        margin-bottom: 6rem;
+      }
+    }
+  }
+}
+
+.pt{
+  &-xs{
+    padding-top: 0.4rem;
   }
 }
 

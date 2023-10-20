@@ -1,27 +1,49 @@
 .form{
     &-group{
+        margin-bottom: 2.2rem;
 
+        &_sm{
+            margin-bottom: 2rem;
+        }
+
+        &_md{
+            margin-bottom: 3rem;
+        }
+
+        &_lg{
+            margin-bottom: 4rem;
+        }
+
+        &__label{
+            .has-error &{
+                color: $danger;
+            }
+        }
     }
 
     &-control{
         font-family: inherit;
         display: block;
-        border: 1px solid #CBCBCB;
-        border-radius: 5px;
-        padding: 1.3rem 1.9rem;
+        border: none;
+        padding: 1rem;
+        border-bottom: 1px solid #D4D4F0;
+        border-radius: 0;
         width: 100%;
-        font-size: 1.4rem;
-        line-height: 2rem;
+        font-size: 1.2rem;
+        line-height: normal;
         font-weight: 400;
-        background: transparent;
         transition: all 0.3s ease-out;
-        &.has-error{
+
+        .has-error &{
             border-color: $danger;
+            color: $danger;
+
             &::-webkit-input-placeholder{color:$danger!important}
             &::-moz-placeholder{color:$danger!important}
             &:-moz-placeholder{color:$danger!important}
             &:-ms-input-placeholder{color:$danger!important}
         }
+
         &:disabled{
             background: #E8E8E8;
             border-color: #E8E8E8;
@@ -86,6 +108,19 @@
     }
 }
 
+.error-mess{
+    padding: 0.5rem 1rem 0;
+    font-style: italic;
+    font-size: 1rem;
+    display: none;
+    color: $danger;
+    position: absolute;
+
+    .has-error &{
+        display: block;
+    }
+}
+
 
 // rating
 .rating{
@@ -108,43 +143,47 @@
 
 // number
 .input-number {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    border-radius: 1rem;
+    border: 1px solid #D4D4F0;
+
     &__input {
         text-align: center;
         width: 100%;
         border: none;
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 2.3rem;
+        font-size: 1.3rem;
         background: transparent;
-        width: 4.8rem;
+        width: 2rem;
+        padding-bottom: 0.1rem;
     }
+
     &__plus, &__minus{
         position: relative;
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 1.4rem;
+        height: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 50%;
         z-index: 2;
         cursor: pointer;
         transition: all 0.3s ease-out;
         flex-shrink: 0;
-        border: 1px solid rgba(#191919, 0.1);
+
         &:before, &:after{
             content: '';
             display: block;
             position: absolute;
-            width: 1.4rem;
-            height: 0.2rem;
+            width: 0.6rem;
+            height: 0.1rem;
             transition: all 0.3s ease-out;
-            border-radius: 3px;
+            background: $black;
         }
+
         &:after{
             transform: rotate(90deg);
         }
+
         &:hover{
 
             &:before, &:after{
@@ -156,8 +195,9 @@
         &:after{
             display: none;
         }
+
         &:before{
-            width: 1.2rem;
+            width: 0.6rem;
         }
     }
 }

@@ -1,0 +1,62 @@
+.form{
+  @include bp(md-up){
+    width: 29.5rem;
+  }
+
+  &_md{
+    @include bp(md-up){
+      width: 40rem;
+    }
+  }
+
+  &_lg{
+    width: 47rem;
+    max-width: 100%;
+  }
+}
+.pass-view{
+  position: absolute;
+  right: 0.9rem;
+  top: 1rem;
+  z-index: 3;
+
+  &.active{
+    background-image: url(../img/icons/view-active.svg);
+  }
+}
+
+.social {
+  padding-top: 0.4rem;
+  gap: 2rem;
+  display: flex;
+
+  &__link {
+    @include bp(hv){
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.error-block{
+  width: 46rem;
+  max-width: 100%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+
+  &__title{
+    font-size: 12.8rem;
+    font-weight: 800;
+    margin-bottom: -0.1rem;
+
+    @include bp(sm){
+      font-size: 6.4rem;
+      margin-bottom: 1.3rem;
+    }
+  }
+
+  .btn{
+    margin-top: 0.5rem;
+  }
+}

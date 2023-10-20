@@ -25,7 +25,9 @@ p{
     line-height: normal;
 
     @include bp(sm){
-       font-size: 1.8rem;
+       &:not(.no-change){
+        font-size: 1.8rem;
+       }
     }
 
     &_size{
@@ -121,6 +123,10 @@ p{
     }
     &_left{
         text-align: left!important;
+
+        &-sm{
+            text-align: left!important;
+        }
     }
     &_right{
         text-align: right!important;

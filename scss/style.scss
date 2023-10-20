@@ -29,9 +29,28 @@ body{
 
     &.overflow-none{
         overflow: hidden;
+
         @include bp(xl-up){
             padding-right: 1.7rem;
+
+            // .footer{
+            //     right: 1.7rem;
+
+            //     &:before{
+            //         position: absolute;
+            //         z-index: -1;
+            //         right: -2rem;
+            //         top: 0;
+            //         bottom: 0;
+            //         background: #404040;
+            //     }
+
+            //     .packing-section{
+            //         right: -1.7rem;
+            //     }
+            // }
         }
+        
     }
 }
 
@@ -40,6 +59,11 @@ body{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 12.4rem;
+
+    @include bp(sm){
+        padding-bottom: 19.5rem;
+    }
 }
 
 .container{
@@ -164,31 +188,40 @@ body{
 
 // breadcrumb
 .breadcrumb{
-    margin: 3.2rem 0 1.4rem;
+    margin: 1.4rem 0 5.3rem;
     font-size: 1.2rem;
     line-height: 2.8rem;
     display: flex;
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
+    color: $dark;
+
     @include bp(md){
-        font-size: 1rem;
-        line-height: 1.2rem;
-        margin: 1.7rem 0 0.5rem;
+        margin: 0.4rem 0 3.3rem;
     }
-    &__item{
-        margin-bottom: 1rem;
+
+    &_md{
+        @include bp(lg-up){
+            margin-bottom: 2.2rem;
+        }
     }
+
+    // &__item{
+    //     margin-bottom: 1rem;
+    // }
+
     &__item+&__item{
         &:before{
-            content: '–';
-            color: #000;
+            content: '>';
+            color: $dark;
             display: inline-block;
-            margin: 0 0.7rem;
-            @include bp(md){
-                margin: 0 0.55rem;
-            }
+            margin: 0 0.3rem;
         }
+    }
+
+    &__link{
+        color: $dark;
     }
 }
 
@@ -227,13 +260,58 @@ body{
     }
 }
 
+.tab-nav{
+    &_bordered{
+        border-bottom: 1px solid #D4D4F0;
+        justify-content: flex-end;
+
+        @include bp(sm){
+            justify-content: flex-start;
+            font-size: 1.3rem;
+            margin-top: 1.1rem;
+        }
+
+        .tab-nav__item{
+            margin-left: 4.2rem;
+
+            @include bp(sm){
+                margin: 0 3.5rem 0 0;
+            }
+        }
+
+        .tab-nav__link{
+            border-bottom: 1px solid transparent;
+            display: block;
+            padding-bottom: 0.7rem;
+            margin-bottom: -0.1rem;
+
+            @include bp(sm){
+                padding-bottom: 0.9rem;
+            }
+
+            &.active{
+                border-color: #202020;
+            }
+
+            @include bp(hv){
+                &:hover{
+                    border-color: #202020;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 @import 'form';
 @import 'header';
 @import 'home';
-@import 'footer';
 @import 'main';
-
+@import 'footer';
+@import 'login';
+@import 'cabinet';
 
 
 

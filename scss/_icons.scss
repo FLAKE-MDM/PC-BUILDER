@@ -79,6 +79,10 @@
     height: 1.4rem;
     margin-right: 0.78rem;
     background-image: url(../img/icons/power-dark.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/power.svg);
+    }
 }
 .icon-pensil{
     width: 1.5rem;
@@ -94,6 +98,10 @@
     width: 1.4rem;
     height: 1.4rem;
     background-image: url(../img/icons/save-dark.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/save.svg);
+    }
 }
 .icon-del{
     width: 1.3rem;
@@ -104,11 +112,19 @@
     width: 1.3rem;
     height: 1.4rem;
     background-image: url(../img/icons/del-dark.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/del.svg);
+    }
 }
 .icon-search{
     width: 2.4rem;
     height: 2.4rem;
     background-image: url(../img/icons/search.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/search-inversion.svg);
+    }
 }
 .icon-processor{
     width: 4.8rem;
@@ -119,6 +135,14 @@
     }
     &:after{
         background-image: url(../img/icons/processor-active.svg);
+    }
+
+    .dark-theme &{
+        background-image: url(../img/icons/processor-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
     }
 }
 .icon-motherboard{
@@ -131,6 +155,14 @@
     &:after{
         background-image: url(../img/icons/motherboard-active.svg);
     }
+
+    .dark-theme &{
+        background-image: url(../img/icons/motherboard-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
+    }
 }
 .icon-RAM{
     width: 4.8rem;
@@ -141,6 +173,14 @@
     }
     &:after{
         background-image: url(../img/icons/RAM-active.svg);
+    }
+
+    .dark-theme &{
+        background-image: url(../img/icons/RAM-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
     }
 }
 .icon-video-card{
@@ -153,6 +193,14 @@
     &:after{
         background-image: url(../img/icons/video-card-active.svg);
     }
+
+    .dark-theme &{
+        background-image: url(../img/icons/video-card-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
+    }
 }
 .icon-case{
     width: 2.5rem;
@@ -163,6 +211,14 @@
     }
     &:after{
         background-image: url(../img/icons/case-active.svg);
+    }
+
+    .dark-theme &{
+        background-image: url(../img/icons/case-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
     }
 }
 .icon-PSU{
@@ -175,6 +231,14 @@
     &:after{
         background-image: url(../img/icons/PSU-active.svg);
     }
+
+    .dark-theme &{
+        background-image: url(../img/icons/PSU-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
+    }
 }
 .icon-HDD{
     width: 3.7rem;
@@ -185,6 +249,14 @@
     }
     &:after{
         background-image: url(../img/icons/HDD-active.svg);
+    }
+
+    .dark-theme &{
+        background-image: url(../img/icons/HDD-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
     }
 }
 .icon-cooler{
@@ -197,6 +269,14 @@
     &:after{
         background-image: url(../img/icons/cooler-active.svg);
     }
+
+    .dark-theme &{
+        background-image: url(../img/icons/cooler-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
+    }
 }
 .icon-OS{
     width: 4.8rem;
@@ -208,11 +288,23 @@
     &:after{
         background-image: url(../img/icons/OS-active.svg);
     }
+
+    .dark-theme &{
+        background-image: url(../img/icons/OS-inversion.svg);
+
+        &::before, &:after{
+            display: none;
+        }
+    }
 }
 .icon-clear{
     width: 1.3rem;
     height: 1.3rem;
     background-image: url(../img/icons/clear.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/clear-inversion.svg);
+    }
 }
 .icon-block{
     width: 2.2rem;
@@ -220,9 +312,17 @@
 
     &:before{
         background-image: url(../img/icons/block.svg);
+
+        .dark-theme &{
+            background-image: url(../img/icons/block-dark.svg);
+        }
     }
     &:after{
         background-image: url(../img/icons/block-active.svg);
+
+        .dark-theme &{
+            background-image: url(../img/icons/block-dark-active.svg);
+        }
     }
 }
 .icon-list{
@@ -231,9 +331,17 @@
 
     &:before{
         background-image: url(../img/icons/list.svg);
+
+        .dark-theme &{
+            background-image: url(../img/icons/list-dark.svg);
+        }
     }
     &:after{
         background-image: url(../img/icons/list-active.svg);
+
+        .dark-theme &{
+            background-image: url(../img/icons/list-dark-active.svg);
+        }
     }
 }
 .icon-play{
@@ -255,17 +363,29 @@
     width: 1.9rem;
     height: 1.9rem;
     background-image: url(../img/icons/close.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/close-inversion.svg);
+    }
 }
 .icon-close-dark{
     width: 1.8rem;
     height: 1.8rem;
     background-image: url(../img/icons/close-dark.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/close-inversion.svg);
+    }
 }
 .icon-view{
     width: 1.6rem;
     height: 1.4rem;
     background-image: url(../img/icons/view.svg);
     background-position: 50% 50%;
+
+    .dark-theme &{
+        background-image: url(../img/icons/view-dark.svg);
+    }
 }
 .icon-google{
     width: 2rem;
@@ -281,31 +401,37 @@
     width: 5rem;
     height: 3.5rem;
     background-image: url(../img/icons/check-lg.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/check-lg-inversion.svg);
+    }
 }
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
-}
-
-
-
-
-
-.icon-{
-    width: rem;
-    height: rem;
-    background-image: url(../img/icons/.svg);
-}
-
-.icon-{
-    width: rem;
-    height: rem;
+.icon-delete{
+    width: 1.3rem;
+    height: 1.4rem;
 
     &:before{
-        background-image: url(../img/icons/.svg);
+        background-image: url(../img/icons/delete.svg);
     }
     &:after{
-        background-image: url(../img/icons/-active.svg);
+        background-image: url(../img/icons/delete-active.svg);
+    }
+}
+.icon-intel{
+    width: 5rem;
+    height: 2rem;
+    background-image: url(../img/icons/intel.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/intel-inversion.svg);
+    }
+}
+.icon-amd{
+    width: 7.3rem;
+    height: 1.8rem;
+    background-image: url(../img/icons/amd.svg);
+
+    .dark-theme &{
+        background-image: url(../img/icons/amd-inversion.svg);
     }
 }

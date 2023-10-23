@@ -5,12 +5,16 @@
     position: relative;
     z-index: 50;
 
+    .dark-theme &{
+        background: $light;
+    }
+
     @include bp(md){
         padding: 1rem 0 1.1rem;
     }
 
     &_transprarent{
-        background: none;
+        background: none!important;
         box-shadow: none;
         padding-bottom: 1.9rem;
 
@@ -57,6 +61,10 @@
         padding: 3rem 1rem;
         background: #fff;
         z-index: 5;
+
+        .dark-theme &{
+            background: #181826;
+        }
     }
 
     .icons-nav{
@@ -71,15 +79,19 @@
             }
         }
 
-        .icon-compare{
-            @include bp(md){
-                background-image: url(../img/icons/compare-dark.svg);
+        body:not(.dark-theme) &{
+            .icon-compare{
+                @include bp(md){
+                    background-image: url(../img/icons/compare-dark.svg);
+                }
             }
         }
 
-        .icon-user{
-            @include bp(md){
-                background-image: url(../img/icons/user-dark.svg);
+        body:not(.dark-theme) &{
+            .icon-user{
+                @include bp(md){
+                    background-image: url(../img/icons/user-dark.svg);
+                }
             }
         }
     }
@@ -90,6 +102,10 @@
         @include bp(sm){
             border-bottom: 1px solid #D4D4F0;
             padding: 0.2rem 0 0.9rem;
+
+            .dark-theme &{
+                border-color: $light;
+            }
         }
 
         &__item{
@@ -196,9 +212,62 @@
     @include bp(md){
       color: $black;
       justify-content: center;
+
+      .dark-theme &{
+        color: #fff;
+      }
     }
 
     .checkbox-switch-label{
         margin-top: -0.1rem;
+    }
+}
+
+// basket
+.basket{
+    &-item {
+        border-bottom: 1px solid #D4D4F0;
+        padding: 1.95rem 2rem;
+
+        .dark-theme &{
+            border-color: $light;
+        }
+
+        @include bp(sm){
+            padding: 1.95rem 1rem;
+        }
+
+		&__image {
+            width: 10.5rem;
+            display: flex;
+            justify-content: center;
+            flex-shrink: 0;
+
+            @include bp(sm){
+                width: 8rem;
+            }
+		}
+
+		&__name {
+            align-self: center;
+            margin: 0 3rem 0 1rem;
+            font-size: 1.3rem;
+            flex-grow: 1;
+
+            @include bp(sm){
+                margin: 0 2rem;
+            }
+		}
+
+		&__content {
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+		}
+
+		&__amount {
+            margin: 1.5rem 0 1.2rem;
+		}
     }
 }

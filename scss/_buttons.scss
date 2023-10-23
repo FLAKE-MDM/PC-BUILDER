@@ -106,11 +106,23 @@
         border: 1px solid $black;
         font-weight: normal;
 
+        .dark-theme &{
+            color: #fff;
+            border-color: #fff;
+            background: transparent;
+        }
+
         @include bp(hv){
             &:hover{
                 background: $black;
                 border-color: $black;
                 color: #fff;
+            }
+
+            .dark-theme &:hover{
+                color: #202020;
+                background: #fff;
+                border-color: #fff;
             }
         }
     }
@@ -215,6 +227,12 @@
     }
 }
 
+.wrap-btn{
+    padding-top: 1.8rem;
 
+    @include bp(sm){
+        padding: 0;
+    }
+}
 
 

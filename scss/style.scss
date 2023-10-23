@@ -3,8 +3,8 @@
 @import 'reset';
 @import 'mixin';
 @import 'variables';
-@import 'vendor';
 @import 'icons';
+@import 'vendor';
 @import 'buttons';
 @import 'typography';
 @import 'grid';
@@ -20,11 +20,9 @@ body{
     color: $black;
     background: #fff;
 
-    @include bp(md){
-
-    }
-    @include bp(sm){
-
+    &.dark-theme{
+        color: #fff;
+        background: #181826;
     }
 
     &.overflow-none{
@@ -50,7 +48,6 @@ body{
             //     }
             // }
         }
-        
     }
 }
 
@@ -197,6 +194,10 @@ body{
     z-index: 2;
     color: $dark;
 
+    .dark-theme &{
+        color: #fff;
+    }
+
     @include bp(md){
         margin: 0.4rem 0 3.3rem;
     }
@@ -217,6 +218,10 @@ body{
             color: $dark;
             display: inline-block;
             margin: 0 0.3rem;
+
+            .dark-theme &{
+                color: #fff;
+            }
         }
     }
 
@@ -231,9 +236,6 @@ body{
     font-size: 1.3rem;
     line-height: 2rem;
 
-    @include bp(md){
-        // margin: 3.1rem 0 3.9rem;
-    }
     &__item{
         margin: 0 0.5rem;
     }
@@ -246,16 +248,29 @@ body{
         justify-content: center;
         border-radius: 0.2rem;
 
+        .dark-theme &{
+            border-color: #83839C;
+            background: #212134;
+        }
+
         @include bp(hv){
             &:hover{
                 color: #fff;
                 background: $black;
+
+                .dark-theme &{
+                    background: $light;
+                }
             }
         }
 
         &.active{
             color: #fff;
             background: $black;
+
+            .dark-theme &{
+                background: $light;
+            }
         }
     }
 }
@@ -264,6 +279,10 @@ body{
     &_bordered{
         border-bottom: 1px solid #D4D4F0;
         justify-content: flex-end;
+
+        .dark-theme &{
+            border-color: $light;
+        }
 
         @include bp(sm){
             justify-content: flex-start;
@@ -291,11 +310,19 @@ body{
 
             &.active{
                 border-color: #202020;
+
+                .dark-theme &{
+                    border-color: #fff;
+                }
             }
 
             @include bp(hv){
                 &:hover{
                     border-color: #202020;
+
+                    .dark-theme &{
+                        border-color: #fff;
+                    }
                 }
             }
         }
@@ -312,6 +339,7 @@ body{
 @import 'footer';
 @import 'login';
 @import 'cabinet';
+@import 'compare';
 
 
 

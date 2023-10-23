@@ -10,6 +10,10 @@
     right: 0;
     z-index: 55;
 
+    .dark-theme &{
+        background: $light;
+    }
+
     @include bp(sm){
       padding: 0.9rem 0.5rem 1.5rem;
       display: none;
@@ -97,6 +101,10 @@
         max-height: calc(100vh - 14.3rem);
         display: flex;
 
+        .dark-theme &{
+            background: #181826;
+        }
+
         @include bp(sm){
             max-height: calc(100vh - 21.3rem);
         }
@@ -119,6 +127,10 @@
         &:not(:last-child){
             border-bottom: 1px solid #D4D4F0;
 
+            .dark-theme &{
+                border-color: $light;
+            }
+
             @include bp(sm){
                 border: none;
             }
@@ -140,6 +152,10 @@
         top: 0;
         margin: -1.8rem auto 0;
         z-index: -1;
+
+        .dark-theme &{
+            background: $light;
+        }
 
         &.active{
             z-index: 3;
@@ -164,6 +180,10 @@
             left: -200rem;
             right: -200rem;
             top: 1.8rem;
+
+            .dark-theme &{
+                border-color: $light;
+            }
         }
     }
 

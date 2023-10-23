@@ -22,6 +22,10 @@
 
   &.active{
     background-image: url(../img/icons/view-active.svg);
+
+    .dark-theme &{
+      background-image: url(../img/icons/view-active-dark.svg);
+    }
   }
 }
 

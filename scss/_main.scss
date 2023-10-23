@@ -22,6 +22,11 @@
     font: 400 1.6rem/normal 'Montserrat', Arial, sans-serif;
     font-style: italic;
 
+    .dark-theme &{
+      background: $light;
+      color: #fff;
+    }
+
     @include bp(sm){
       box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
       border-radius: 0.3rem;
@@ -113,6 +118,16 @@
       }
     }
 
+    .dark-theme &{
+      background: $light;
+
+      @include bp(hv){
+        &:hover{
+          background: darken($color: $light, $amount: 5);
+        }
+      }
+    }
+
     p{
       margin-bottom: 1rem;
     }
@@ -172,6 +187,20 @@
       }
     }
 
+    .dark-theme &{
+      background: #212134;
+
+      &.active{
+        background: $light;
+      }
+
+      @include bp(hv){
+        &:hover{
+          background: $light;
+        }
+      }
+    }
+
 		&__title {
       margin-top: 0.5rem;
       line-height: normal;
@@ -199,6 +228,10 @@
   padding-right: 1rem;
   margin-right: 1rem;
   border-right: 1px solid #D4D4F0;
+
+  .dark-theme &{
+    border-color: $light;
+  }
 
   @include bp(md){
     position: fixed;
@@ -229,6 +262,10 @@
   &-item{
     border-bottom: 1px solid #D4D4F0;
     padding-left: 1rem;
+
+    .dark-theme &{
+      border-color: $light;
+    }
 
     @include bp(sm){
       padding-left: 0;
@@ -279,6 +316,10 @@
     @include bp(sm){
       margin-right: 0.8rem;
     }
+  }
+
+  .dark-theme &{
+    color: #fff;
   }
 }
 
@@ -355,6 +396,11 @@
       font: 400 1.2rem/normal 'Montserrat', Arial, sans-serif;
       font-style: italic;
 
+      .dark-theme &{
+        background: $light;
+        color: #fff;
+      }
+
       @include bp(sm){
         padding: 0.7rem 3rem 0.8rem 0.9rem;
       }
@@ -404,6 +450,10 @@
     padding: 1.6rem 1.5rem;
     white-space: nowrap;
 
+    .dark-theme &{
+      background: $light;
+    }
+
     &:first-child{
       padding-left: 2rem;
     }
@@ -445,6 +495,10 @@
   tr:nth-of-type(odd){
     td{
       background: #F9F9FF;
+
+      .dark-theme &{
+        background: #212134;
+      }
     }
   }
 }
@@ -483,6 +537,10 @@
 
     &:before{
       border-bottom-color: #606060;
+
+      .dark-theme &{
+        border-bottom-color: #fff;
+      }
     }
 
     &.active{
@@ -501,6 +559,10 @@
   &.arrow-down{
     &:before{
       border-top-color: #606060;
+
+      .dark-theme &{
+        border-top-color: #fff;
+      }
     }
 
     &.active{
@@ -614,6 +676,10 @@
     padding: 2.1rem 2rem 3.2rem;
     min-height: 23rem;
 
+    .dark-theme &{
+      background: $light;
+    }
+
     @include bp(sm){
       padding-bottom: 1.6rem;
       min-height: 1rem;
@@ -646,6 +712,15 @@
 
     &:first-child{
       border-top: 1px solid #D4D4F0;
+    }
+  }
+
+  .dark-theme &{
+    background: $light;
+
+    @include bp(sm){
+      border-color: $light;
+      background: none;
     }
   }
 
@@ -698,6 +773,10 @@
       border-bottom: 1px solid #D4D4F0;
     }
 
+    .dark-theme &{
+      border-color: $light;
+    }
+
     @include bp(hv){
       &:hover{
         z-index: 3;
@@ -709,6 +788,10 @@
           top: 0;
           left: 0;
           right: 0;
+
+          .dark-theme &{
+            background: $light;
+          }
         }
 
         .catalogue-item__description{
@@ -721,6 +804,10 @@
       padding: 1rem 2rem 0;
       border-radius: 0.3rem;
       background: #FFF;
+
+      .dark-theme &{
+        background: none
+      }
 
       @include bp(sm){
        padding: 2rem 0;
@@ -809,6 +896,10 @@
 
       .catalogue-item__content{
         padding: 0;
+
+        .dark-theme &{
+          background: none;
+        }
       }
 
       @include bp(hv){

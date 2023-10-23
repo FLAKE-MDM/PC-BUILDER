@@ -85,6 +85,10 @@
     padding: 8rem 7rem 7rem;
     min-height: 34.3rem;
 
+    .dark-theme &{
+      background: #181826;
+    }
+
     @include bp(sm){
       padding: 8rem 2rem 6rem;
     }
@@ -130,10 +134,24 @@
   min-width: 100%;
   margin: 0.8rem 0 0;
   background: #FFFFFF;
-  box-shadow: 0px 12px 30px rgba(45, 45, 45, 0.18);
-  border-radius: 0.3rem;
   top: 100%;
   overflow: hidden;
+  filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.10));
+
+  .dark-theme &{
+    background: #181826;
+  }
+
+  &_basket{
+    left: auto;
+    right: 0;
+    width: 44rem;
+
+    @include bp(sm){
+      width: 36rem;
+      right: -1rem;
+    }
+  }
 
   &__link{
     font-size: 1.4rem;
@@ -146,6 +164,48 @@
     &.active{
       background: #ECF3EA;
     }
+  }
+
+  &__close{
+    width: 1.6rem;
+    height: 1.6rem;
+
+    @include bp(hv){
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__header{
+    border-bottom: 1px solid #D4D4F0;
+    padding: 2rem;
+
+    @include bp(sm){
+      padding: 1.5rem 1rem;
+    }
+  }
+
+  &__footer{
+    padding: 2.1rem 2rem;
+    background: #F9F9FF;
+
+    @include bp(sm){
+      padding: 2.1rem 1rem;
+    }
+
+    .dark-theme &{
+      background: $light;
+    }
+
+    .btn{
+      margin-top: 1.4rem;
+    }
+  }
+
+  &__price{
+    font-size: 2.1rem;
+    font-weight: 600;
   }
 }
 .open .dropdown-menu {
@@ -171,6 +231,10 @@
     position: absolute;
     bottom: 0;
     margin: auto;
+
+    .dark-theme &{
+      background-image: url(../img/icons/caret-inversion.svg);
+    }
   }
 
   &.active{

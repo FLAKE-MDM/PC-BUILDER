@@ -3,6 +3,10 @@ a{
     text-decoration: none;
     color: $black;
 
+    .dark-theme &{
+        color: #fff;
+    }
+
     &:hover{
         // color: $secondary;
     }
@@ -31,18 +35,9 @@ p{
     }
 
     &_size{
-        &-xs{
-            
-        }
         &-sm{
             font-size: 1.8rem;
             line-height: normal;
-        }
-        &-md{
-            
-        }
-        &-lg{
-            
         }
         &-xl{
             font-size: 9.6rem;
@@ -79,17 +74,8 @@ p{
                 line-height: 125%;
             }
         }
-        &-lg{
-            
-        }
-        &-xl{
-            
-        }
     }
     // colors
-    &_primary{
-        
-    }
 
     &_inversion{
         color: #fff;
@@ -97,6 +83,10 @@ p{
 
     &_dark{
         color: $dark;
+
+        .dark-theme &{
+            color: #fff;
+        }
     }
 
     // weight

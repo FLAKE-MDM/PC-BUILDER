@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.align-items-baseline{
+  align-items: baseline;
+}
+
 .justify-content-between{
   justify-content: space-between;
 }
@@ -382,6 +386,12 @@
     &_mobile{
       @include bp(sm){
         margin-bottom: 6rem;
+      }
+    }
+
+    &_m{
+      @include bp(sm){
+        margin-bottom: 1.8rem;
       }
     }
   }

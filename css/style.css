@@ -3504,6 +3504,9 @@ input:checked + .checkbox-switch:before {
     margin-bottom: 2rem;
     text-align: left;
   }
+  .dark-theme .packing-item__icon {
+    background: #212134;
+  }
 }
 @media only screen and (max-width: 767px) {
   .packing-item__icon .icon {

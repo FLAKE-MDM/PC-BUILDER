@@ -416,7 +416,7 @@ if(window.innerWidth < 768){
         // Если свайп был влево (отрицательное расстояние), смещаем элемент влево и удаляем
         if (distance < -50) {
             swipeElement.animate({ left: '-100%' }, 500, function() {
-                swipeElement.remove();
+                $(this).remove(); // Используем $(this) для удаления текущего элемента
             });
         }
     });

@@ -395,34 +395,34 @@ if(window.innerWidth < 768){
           <a href="#" class="btn btn_secondary btn_size-sm w-100">Замінити</a>
           <a href="#" class="btn btn_outline btn_size-sm w-100">Видалити</a>
       </div>
+      <div class="icon-del-md icon packing-item__del"></div>
     </div>
     `);
 
-    const swipeElement = $('.packing-item_swipe').last();
-    let startX;
-
-    swipeElement.on('mousedown touchstart', function(event) {
-        // Запоминаем начальную позицию прикосновения
-        startX = event.pageX || event.originalEvent.touches[0].pageX;
-    });
-
-    swipeElement.on('mouseup touchend', function(event) {
-        // Определяем конечную позицию прикосновения
-        const endX = event.pageX || event.originalEvent.changedTouches[0].pageX;
-
-        // Расстояние, на которое был совершен свайп
-        const distance = endX - startX;
-
-        // Если свайп был влево (отрицательное расстояние), смещаем элемент влево и удаляем
-        if (distance < -50) {
-            swipeElement.animate({ left: '-100%' }, 500, function() {
-                $(this).remove(); // Используем $(this) для удаления текущего элемента
-            });
-        }
-    });
-
     $(this).parents('.modal').removeClass("show");
     $('body').removeClass('overflow-none');
-  })
+  });
+
+  $(document).on('mousedown touchstart', '.packing-item_swipe', function(event) {
+    // Запоминаем начальную позицию прикосновения
+    $(this).data('startX', event.pageX || event.originalEvent.touches[0].pageX);
+  });
+
+  $(document).on('mouseup touchend', '.packing-item_swipe', function(event) {
+      const startX = $(this).data('startX');
+      // Определяем конечную позицию прикосновения
+      const endX = event.pageX || event.originalEvent.changedTouches[0].pageX;
+
+      // Расстояние, на которое был совершен свайп
+      const distance = endX - startX;
+
+      // Если свайп был влево (отрицательное расстояние), смещаем элемент влево и удаляем
+      if (distance < -50) {
+          $(this).animate({ margin: '0 100% 0 -100%' }, 500, function() {
+              $(this).remove();
+          });
+      }
+  });
+
 }
 

@@ -241,6 +241,8 @@
     }
 
     &-item {
+        position: relative;
+
         @include bp(sm){
             flex-wrap: wrap;
         }
@@ -290,6 +292,14 @@
                     margin: 0;
                 }
             }
+        }
+
+        &__del{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 100%;
+            margin: auto 0 auto 3rem;
         }
 
 		&__image {

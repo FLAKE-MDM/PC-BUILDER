@@ -248,6 +248,15 @@ input:hover::-webkit-inner-spin-button {
   background-image: url(../img/icons/del.svg);
 }
 
+.icon-del-md {
+  width: 1.8rem;
+  height: 2rem;
+  background-image: url(../img/icons/del-md.svg);
+}
+.dark-theme .icon-del-md {
+  background-image: url(../img/icons/del.svg);
+}
+
 .icon-del-dark {
   width: 1.3rem;
   height: 1.4rem;
@@ -3571,6 +3580,9 @@ input:checked + .checkbox-switch:before {
 .dark-theme .packing-link::before {
   border-color: #4A4A6A;
 }
+.packing-item {
+  position: relative;
+}
 @media only screen and (max-width: 767px) {
   .packing-item {
     flex-wrap: wrap;
@@ -3621,6 +3633,13 @@ input:checked + .checkbox-switch:before {
   .packing-item__icon p {
     margin: 0;
   }
+}
+.packing-item__del {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  margin: auto 0 auto 3rem;
 }
 .packing-item__image {
   flex-shrink: 0;

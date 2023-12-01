@@ -1,5 +1,5 @@
 .footer{
-    padding: 2rem 0 2rem;
+    padding: 1rem 0;
     margin-top: auto;
     background: #404040;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.10);
@@ -15,77 +15,127 @@
     }
 
     @include bp(sm){
-      padding: 0.9rem 0.5rem 1.5rem;
+      padding-top: 0.4rem;
     }
 
     &__btn{
-        margin-top: 1.1rem;
+        margin-left: 2rem;
+        align-self: flex-start;
+
+        @include bp(lg){
+            margin: 1.1rem 0 0;
+        }
+
+        @include bp(sm){
+            font-size: 1rem;
+            padding: 0.3rem 2.7rem 0.4rem;
+            margin-top: 0.3rem;
+        }
     }
 
     &__links{
         width: 32.9rem;
         max-width: 100%;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 2rem;
+        display: flex;
+        width: 41%;
+        justify-content: space-between;
         align-self: flex-start;
-        margin-top: 0.6rem;
+        margin-top: 1.1rem;
+        position: relative;
+
+        @include bp(xl){
+            width: 48%;
+        }
+
+        @include bp(lg){
+            align-self: flex-end;
+            width: 55%;
+        }
+
+        @include bp(md){
+            font-size: 0;
+            width: auto;
+            gap: 3rem;
+        }
 
         @include bp(sm){
-            grid-template-columns: 50% auto;
-            width: 100%;
+            gap: 2.95rem;
         }
     }
 
     &__price{
-        @include bp(sm){
-            margin-top: 2.5rem;
+        display: flex;
+        position: relative;
+
+        @include bp(lg){
+            display: block;
         }
 
-        .title{
-            @include bp(sm){
-                font-size: 2.4rem;
-            }
+        @include bp(sm){
+            
+        }
+    }
+
+    &__title{
+        font-size: 2.1rem;
+        font-weight: 600;
+
+        @include bp(sm){
+            font-size: 1rem;
         }
     }
 
     &-link{
         margin-bottom: 1.2rem;
 
-        @include bp(sm){
-            margin-bottom: 0.3rem;
+        @include bp(md){
+            font-size: 0;
+            margin: 0 0 0.3rem;
+        }
 
-            &:nth-of-type(even){
-                margin-left: auto;
-            }
+        @include bp(sm){
+
+            // &:nth-of-type(even){
+            //     margin-left: auto;
+            // }
         }
 
         &__icon{
             margin-right: 0.8rem;
 
-            @include bp(sm){
-                margin-bottom: -0.1rem;
+            @include bp(md){
+                margin: 0!important;
             }
+
+            // @include bp(sm){
+            //     margin-bottom: -0.1rem;
+            // }
         }
 
         .icon-pensil{
             margin-left: 0.8rem;
-
-            @include bp(sm){
-                margin-left: 0.7rem;
-            }
         }
     }
 
     &__pover{
-        margin-top: 0.7rem;
+        margin: -0.2rem 9rem 0 0;
+
+        @include bp(xl){
+            margin-right: 3rem;
+        }
 
         @include bp(sm){
-            margin-top: 0.8rem;
+            font-size: 0.8rem;
         }
 
         .icon{
             margin-top: 0.1rem;
+
+            @include bp(sm){
+                width: 0.9rem;
+                height: 1.1rem;
+                margin: 0.1rem 0.4rem 0 0;
+            }
         }
     }
 }
@@ -97,15 +147,15 @@
         right: 0;
         bottom: 100%;
         background: #fff;
-        max-height: calc(100vh - 14.3rem);
+        max-height: calc(100vh - 7.4rem);
         display: flex;
 
         .dark-theme &{
             background: #181826;
         }
 
-        @include bp(sm){
-            max-height: calc(100vh - 21.3rem);
+        @include bp(md){
+            max-height: calc(100vh - 10.8rem);
         }
 
         &__content{
@@ -141,16 +191,15 @@
         position: absolute;
         background: #404040;
         width: 4.4rem;
-        height: 4.4rem;
+        height: 4.2rem;
         border-radius: 50%;
         display: flex;
         justify-content: center;
-        padding-top: 0.8rem;
+        padding-top: 0.6rem;
         left: 0;
         right: 0;
         top: 0;
-        margin: -1.8rem auto 0;
-        z-index: -1;
+        margin: -1.2rem auto 0;
 
         .dark-theme &{
             background: $light;
@@ -158,11 +207,14 @@
 
         &.active{
             z-index: 3;
-        }
 
-        &.active{
             .icon-up{
                 transform: rotate(180deg);
+            }
+
+            &::before{
+                top: 1.2rem;
+                transition: none;
             }
         }
 
@@ -179,6 +231,8 @@
             left: -200rem;
             right: -200rem;
             top: 1.8rem;
+            transition: all 0.3s ease-out;
+            transition-delay: 0.5s;
 
             .dark-theme &{
                 border-color: $light;

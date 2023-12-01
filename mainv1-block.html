@@ -326,44 +326,44 @@
             <!-- components -->
             <div class="title text_upper mt-xl mb-lg text_center mb-lg_m d-none d-md-block">Оберіть компоненти</div>
             <div class="components-nav components-nav_mobile d-flex">
-              <a href="#" class="components-item active">
+              <a href="#" class="components-item active" id="processor">
                 <div class="components-item__icon"><div class="icon icon_double icon-processor"></div></div>
                 <div class="components-item__title text_size-sm">Процесор</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="motherboard">
                 <div class="components-item__icon"><div class="icon icon_double icon-motherboard"></div></div>
                 <div class="components-item__title text_size-sm">Материнська плата</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="RAM">
                 <div class="components-item__icon"><div class="icon icon_double icon-RAM"></div></div>
                 <div class="components-item__title text_size-sm">Оперативна пам'ять</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="card">
                 <div class="components-item__icon"><div class="icon icon_double icon-video-card"></div></div>
                 <div class="components-item__title text_size-sm">Відеокарта</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="case">
                 <div class="components-item__icon"><div class="icon icon_double icon-case"></div></div>
                 <div class="components-item__title text_size-sm">Корпус</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="PSU">
                 <div class="components-item__icon"><div class="icon icon_double icon-PSU"></div></div>
-                <div class="components-item__title text_size-sm">Блок <br class="d-none d-md-block">живлення</div>
+                <div class="components-item__title text_size-sm">Блок <br class="d-none d-lg-block">живлення</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="HDD">
                 <div class="components-item__icon"><div class="icon icon_double icon-HDD"></div></div>
                 <div class="components-item__title text_size-sm">Пристрій зберігання даних</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="cooler">
                 <div class="components-item__icon"><div class="icon icon_double icon-cooler"></div></div>
                 <div class="components-item__title text_size-sm">Охолодження процесору</div>
               </a>
-              <a href="#" class="components-item">
+              <a href="#" class="components-item" id="OS">
                 <div class="components-item__icon"><div class="icon icon_double icon-OS"></div></div>
                 <div class="components-item__title text_size-sm">Операційна система</div>
               </a>
             </div>
-            <div class="d-lg-flex">
+            <div class="d-lg-flex wrap-main">
               <!-- filter -->
               <div class="filter text_size-sm" id="filter">
                 <div class="main-search d-lg-none">
@@ -878,7 +878,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -888,10 +888,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -906,7 +906,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product2" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-4.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -916,10 +916,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product2" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product2" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -934,7 +934,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -944,10 +944,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -962,7 +962,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -972,10 +972,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -990,7 +990,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product2" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-4.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1000,10 +1000,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product2" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product2" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1018,7 +1018,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1028,10 +1028,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1046,7 +1046,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1056,10 +1056,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1074,7 +1074,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product2" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-4.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1084,10 +1084,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product2" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product2" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1102,7 +1102,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1112,10 +1112,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1130,7 +1130,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1140,10 +1140,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1158,7 +1158,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product2" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-4.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1168,10 +1168,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product2" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product2" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1186,7 +1186,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1196,10 +1196,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1214,7 +1214,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1224,10 +1224,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1242,7 +1242,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product2" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-4.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1252,10 +1252,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">Intel Core i7-12700K Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product2" class="modal-open">Intel Core i7-12700K Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product2" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1270,7 +1270,7 @@
                   <div class="catalogue-item">
                     <div class="catalogue-item__content">
                       <div class="d-flex d-md-block align-items-center">
-                        <a href="product.html" class="catalogue-item__image d-flex justify-content-center">
+                        <a href="#product" class="modal-open catalogue-item__image d-flex justify-content-center">
                           <img src="img/content/product-3.png" alt="" class="img-fluid">
                         </a>
                         <div class="catalogue-item__col">
@@ -1280,10 +1280,10 @@
                           <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                         </div>
                       </div>
-                      <h3 class="catalogue-item__name"><a href="product.html">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                      <h3 class="catalogue-item__name"><a href="#product" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                       <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                       <div class="d-grid grid-2 grid_sm">
-                        <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                        <a href="#product" class="btn w-100 btn_secondary btn_size-sm modal-open">Обрати</a>
                         <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                       </div>
                       <div class="catalogue-item__description text_size-sm">
@@ -1467,7 +1467,7 @@
         <!-- /content -->
         <!-- footer -->
         <footer class="footer">
-          <div class="packing-section" id="packing-section">
+          <div class="packing-section d-none d-md-flex" id="packing-section">
               <a href="#packing" class="packing-link collapse-link"><span class="icon icon-up"></span></a>
               <div class="packing-section__content">
                   <div class="collapse packing-section__collapse slow" id="packing">
@@ -1693,37 +1693,38 @@
               </div>
           </div>
           <div class="container">
-              <div class="d-md-flex justify-content-between text_inversion">
+              <div class="d-flex justify-content-between text_inversion">
                   <div class="footer__links">
-                      <a href="#" class="footer-link text_inversion text_semibold d-inline-flex align-items-center">
-                          Нова збірка
-                          <span class="footer-link__icon icon icon-pensil"></span>
-                      </a>
-                      <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
-                          <span class="footer-link__icon icon icon-del"></span>
-                          Очистити
-                      </a>
-                      <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
-                          <span class="footer-link__icon icon icon-save"></span>
-                          Зберегти збірку
-                      </a>
-                      <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
-                          <span class="footer-link__icon icon icon-user icon-user_sm"></span>
-                          Мої збірки
-                      </a>
+                    <a href="#" class="footer-link text_inversion text_semibold d-inline-flex align-items-center">
+                        Нова збірка
+                        <span class="footer-link__icon icon icon-pensil"></span>
+                    </a>
+                    <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
+                      <span class="footer-link__icon icon icon-user icon-user_sm"></span>
+                      Мої збірки
+                    </a>
+                    <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
+                        <span class="footer-link__icon icon icon-save"></span>
+                        Зберегти збірку
+                    </a>
+                    <a href="#" class="footer-link text_inversion text_size-xs d-inline-flex align-items-center">
+                      <span class="footer-link__icon icon icon-del"></span>
+                      Очистити
+                    </a>
                   </div>
                   <div class="footer__price">
                       <div class="d-flex justify-content-between align-items-center">
                           <div class="text_semibold text_size-xs footer__pover d-flex align-items-center">
                               <span class="icon icon-power"></span>0 Вт
                           </div>
-                          <div class="title">0 грн</div>
+                          <div class="footer__title">53 700 грн</div>
                       </div>
-                      <a href="#" class="btn btn_secondary btn_size-md footer__btn btn_large w-100_sm"><span class="icon icon-basket btn__icon"></span>Додати у кошик</a>
+                      <a href="#" class="btn btn_secondary btn_size-md footer__btn btn_large w-100_sm">
+                        <span class="icon icon-basket btn__icon d-none d-md-block"></span>Додати у кошик</a>
                   </div>
               </div>
           </div>
-      </footer>
+        </footer>
         <!-- /footer -->
     </div>
 
@@ -1736,7 +1737,7 @@
               <div class="catalogue-item">
                 <div class="catalogue-item__content">
                   <div class="d-flex d-md-block align-items-center">
-                    <a href="#" class="catalogue-item__image d-flex justify-content-center modal-open">
+                    <a href="#" class="catalogue-item__image d-flex justify-content-center">
                       <img src="img/content/product-3.png" alt="" class="img-fluid">
                     </a>
                     <div class="catalogue-item__col">
@@ -1746,10 +1747,10 @@
                       <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
                     </div>
                   </div>
-                  <h3 class="catalogue-item__name"><a href="#" class="modal-open">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                  <h3 class="catalogue-item__name"><a href="#">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
                   <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
                   <div class="d-grid grid-2 grid_sm">
-                    <a href="#" class="btn w-100 btn_secondary btn_size-sm">Обрати</a>
+                    <a href="#processor" class="btn w-100 btn_secondary btn_size-sm btn-add">Обрати</a>
                     <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
                   </div>
                 </div>
@@ -1881,6 +1882,161 @@
       </div>
     </div>
     <!-- /product -->
+
+    <!-- product2 -->
+    <div class="modal fade" id="product2">
+      <div class="modal-dialog modal-dialog_xl">
+          <div class="modal__content modal__content_padding">
+            <button type="button" class="icon icon-close modal__close modal-close"></button>
+            <div class="product-grid">
+              <div class="catalogue-item">
+                <div class="catalogue-item__content">
+                  <div class="d-flex d-md-block align-items-center">
+                    <a href="#" class="catalogue-item__image d-flex justify-content-center">
+                      <img src="img/content/product-4.png" alt="" class="img-fluid">
+                    </a>
+                    <div class="catalogue-item__col">
+                      <div class="catalogue-item__rating rating">
+                        <div class="rating__active" style="width: 100%;"></div>
+                      </div>
+                      <div class="catalogue-item__price d-md-none text_semibold">18 400 грн</div>
+                    </div>
+                  </div>
+                  <h3 class="catalogue-item__name"><a href="#">AMD Ryzen 7 7800X3D Desktop Processor</a></h3>
+                  <div class="catalogue-item__price d-none d-md-block text_semibold">18 400 грн</div>
+                  <div class="d-grid grid-2 grid_sm">
+                    <a href="#motherboard" class="btn w-100 btn_secondary btn_size-sm btn-add">Обрати</a>
+                    <a href="#" class="btn w-100 btn_outline btn_size-sm">Порівняти</a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-section product-tabs">
+                <ul class="tab-nav d-flex tab-nav_bordered justify-content-end">
+                    <li class="tab-nav__item"><a href="#descriprion" class="tab-link tab-nav__link active">Опис</a></li>
+                    <li class="tab-nav__item"><a href="#characteristics" class="tab-link tab-nav__link">Характеристики</a></li>
+                    <li class="tab-nav__item"><a href="#review" class="tab-link tab-nav__link">Відгуки</a></li>
+                </ul>
+                <div class="tab-content product__tab-content">
+                  <div class="tab-pane active" id="descriprion">
+                    <div class="descriprion-item">
+                      <div class="text_semibold">Процесори AMD Ryzen 3-го покоління</div>
+                      Відмінна продуктивність. Створені перемагати.
+                    </div>
+                    <div class="descriprion-item">
+                      <div class="text_semibold">Платформа з роз'ємом AM4 для процесорів AMD Ryzen</div>
+                        Масова обчислювальна платформа компанії AMD оновлена ​​з випуском нового чіпсета X570 з підтримкою PCIe 4.0.
+                    </div>
+                    <div class="descriprion-item">
+                      <div class="text_semibold">Технологія AMD StoreMI</div>
+                        Програмне забезпечення, яке об'єднує швидкість твердотільного накопичувача і місткість жорсткого диска в одному швидкому і простому в управлінні диску. Це програмне забезпечення надається безкоштовно з материнськими платами AMD X570.
+                    </div>
+                    <div class="descriprion-item">
+                      <div class="text_semibold">Технологія AMD SenseMI</div>
+                        Технології AMD SenseMI, якими оснащений Ryzen, використовують справжній "штучний інтелект", що прискорює роботу процесора.
+                    </div>
+                    <div class="descriprion-item">
+                      <div class="text_semibold">Програма AMD Ryzen Master</div>
+                        Проста і потужна програма для розгону процесорів AMD Ryzen.
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="characteristics">
+                    <table class="w-100 table_spriped">
+                      <tr>
+                        <td>Сокет</td>
+                        <td><div class="text_right">s-AM4</div></td>
+                      </tr>
+                      <tr>
+                        <td>Частота ядра (номінальна)</td>
+                        <td><div class="text_right">3,4 ГГц</div></td>
+                      </tr>
+                      <tr>
+                        <td>Частота ядра (максимальна)</td>
+                        <td><div class="text_right">4,6 ГГц</div></td>
+                      </tr>
+                      <tr>
+                        <td>Загальна кількість ядер</td>
+                        <td><div class="text_right">8</div></td>
+                      </tr>
+                      <tr>
+                        <td>Продуктивні ядра</td>
+                        <td><div class="text_right">8</div></td>
+                      </tr>
+                      <tr>
+                        <td>Енергоефективні ядра</td>
+                        <td><div class="text_right">0</div></td>
+                      </tr>
+                      <tr>
+                        <td>Кількість потоків</td>
+                        <td><div class="text_right">16</div></td>
+                      </tr>
+                      <tr>
+                        <td>Тип пам'яті</td>
+                        <td><div class="text_right">DDR4</div></td>
+                      </tr>
+                      <tr>
+                        <td>Макс. частота пам'яті</td>
+                        <td><div class="text_right">3200 МГц</div></td>
+                      </tr>
+                      <tr>
+                        <td>Ядро</td>
+                        <td><div class="text_right">Vermeer</div></td>
+                      </tr>
+                      <tr>
+                        <td>Об'єм кеша L1</td>
+                        <td><div class="text_right">512 КБ</div></td>
+                      </tr>
+                      <tr>
+                        <td>Об'єм кеша L2</td>
+                        <td><div class="text_right">4 МБ</div></td>
+                      </tr>
+                      <tr>
+                        <td>Об'єм кеша L3</td>
+                        <td><div class="text_right">32 МБ</div></td>
+                      </tr>
+                      <tr>
+                        <td>З вбудованим відеоядром</td>
+                        <td><div class="text_right">немає</div></td>
+                      </tr>
+                      <tr>
+                        <td>Набори спеціальних інструкцій</td>
+                        <td><div class="text_right">AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</div></td>
+                      </tr>
+                      <tr>
+                        <td>Вільний множник</td>
+                        <td><div class="text_right">є</div></td>
+                      </tr>
+                      <tr>
+                        <td>Техпроцес</td>
+                        <td><div class="text_right">7 нм</div></td>
+                      </tr>
+                      <tr>
+                        <td>TDP</td>
+                        <td><div class="text_right">65 Вт</div></td>
+                      </tr>
+                      <tr>
+                        <td>Технології</td>
+                        <td><div class="text_right">AMD Symmetric Multi-Threading</div></td>
+                      </tr>
+                      <tr>
+                        <td>Тип упаковки</td>
+                        <td><div class="text_right">роздрібна коробка</div></td>
+                      </tr>
+                      <tr>
+                        <td>Система охолодження у комплекті</td>
+                        <td><div class="text_right">немає</div></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="tab-pane" id="review">
+                    <p>На даний час немає відгуків про цей товар</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- /product2 -->
 
 
     <script src="js/jquery-3.6.0.min.js"></script>

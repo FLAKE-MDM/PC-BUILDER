@@ -93,14 +93,6 @@ $('.tab-link').click(function(e){
     $(this.getAttribute("href")).addClass('active');
 });
 
-if(window.innerWidth > 767){
-  $(".table__name, .table__image, .catalogue-item__name a, .catalogue-item__image").each(function() {
-    $(this).addClass("modal-open");
-    let url = "#" + $(this).attr("href").slice(0, -5);
-    $(this).attr("href", url)
-  });
-}
-
 // modal
 $(".modal-open").click(function(e){
   e.preventDefault();
@@ -182,7 +174,21 @@ $(".sort-arrow").click(function(e){
   e.preventDefault();
   $(this).parents(".sort-arrows").find(".sort-arrow").removeClass("active");
   $(this).addClass("active");
-})
+});
+
+// fixed nav
+document.addEventListener("DOMContentLoaded", function(){
+  let componentsNav = document.querySelector('.components-nav');
+  let componentsNavTop = componentsNav.offsetTop;
+
+  window.onscroll = function(){
+    if(window.pageYOffset > componentsNavTop){
+      $(componentsNav).addClass("fixed");
+    } else{
+      $(componentsNav).removeClass("fixed");
+    }
+  }
+});
 
 // video
 $('.video-block').each(function() {
@@ -251,7 +257,7 @@ if(window.innerWidth < 768){
   });
 }
 
-// // input number
+// input number
 jQuery(($) => {
   $(document).on('click', '.input-number__minus', function () {
       let total = $(this).next();
@@ -361,3 +367,62 @@ if (currentTheme) {
 }
 
 themeToggle.addEventListener('click', toggleTheme);
+
+// add
+if(window.innerWidth < 768){
+  $('.btn-add').click(function(e){
+    e.preventDefault();
+    let curentID = $(this).attr('href');
+    let name = $(this).parents('.catalogue-item').find('.catalogue-item__name').text();
+    let image = $(this).parents('.catalogue-item').find('.catalogue-item__image img').attr('src');
+    let price = $(this).parents('.catalogue-item').find('.catalogue-item__price').html();
+
+    $(`${curentID}`).after(`
+    <div class="packing-item d-flex align-items-center packing-item_swipe">
+      <a href="#" class="packing-item__image"><img src="${image}" alt="" class="img-fluid"></a>
+      <div class="packing-item__content">
+          <a href="#" class="packing-item__name">${name}</a>
+          <div class="packing-item__amount">
+              <div class="input-number">
+                  <div class="input-number__minus"></div>
+                  <input type="text" class="input-number__input" value="1">
+                  <div class="input-number__plus"></div>
+              </div>
+          </div>
+          <div class="packing-item__price">${price}</div>
+      </div>
+      <div class="btn-group packing-item__btn-group">
+          <a href="#" class="btn btn_secondary btn_size-sm w-100">Замінити</a>
+          <a href="#" class="btn btn_outline btn_size-sm w-100">Видалити</a>
+      </div>
+    </div>
+    `);
+
+    const swipeElement = $('.packing-item_swipe').last();
+    let startX;
+
+    swipeElement.on('mousedown touchstart', function(event) {
+        // Запоминаем начальную позицию прикосновения
+        startX = event.pageX || event.originalEvent.touches[0].pageX;
+    });
+
+    swipeElement.on('mouseup touchend', function(event) {
+        // Определяем конечную позицию прикосновения
+        const endX = event.pageX || event.originalEvent.changedTouches[0].pageX;
+
+        // Расстояние, на которое был совершен свайп
+        const distance = endX - startX;
+
+        // Если свайп был влево (отрицательное расстояние), смещаем элемент влево и удаляем
+        if (distance < -50) {
+            swipeElement.animate({ left: '-100%' }, 500, function() {
+                swipeElement.remove();
+            });
+        }
+    });
+
+    $(this).parents('.modal').removeClass("show");
+    $('body').removeClass('overflow-none');
+  })
+}
+

@@ -58,6 +58,11 @@
       @include bp(lg-up){
         width: 96rem;
       }
+
+      @include bp(sm){
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 
@@ -66,7 +71,7 @@
     top: 1.8rem;
     right: 1.8rem;
     border: none;
-    background: none;
+    background-color: transparent;
     border-radius: 50%;
     transition: all 0.3s ease-out;
 

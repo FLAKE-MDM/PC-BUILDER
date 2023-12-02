@@ -57,61 +57,47 @@
               <div class="d-flex compare">
                 <!-- compare__col -->
                 <div class="compare__col">
-                  <div class="compare-filter">
+                  <div class="compare-filter d-none d-md-block">
                     <div class="filter__header filter-item d-flex justify-content-between">
                       <button type="reset" class="btn-clear d-inline-flex align-items-center">
-                        <span class="icon icon-clear btn-clear__icon"></span>
+                        <span class="icon icon-del-dark btn-clear__icon"></span>
                         Очистити усі
                       </button>
                     </div>
                     <div class="filter-item">
-                      <div class="filter__link text_semibold">Категорія</div>
-                      <div class="filter-item__body">Процесори (3)</div>
+                      <a href="mainv1-block.html" class="compare-add">
+                        <div class="compare-add__icon"><div class="icon icon-plus"></div></div>
+                        <div class="text_dark">Додати до порівняння</div>
+                      </a>
                     </div>
-                    <div class="filter-item">
-                      <div class="filter__link">Показувати</div>
-                      <div class="filter-item__body">
-                        <ul class="check-list">
-                          <li class="check-list__item">
-                            <label class="d-inline-flex align-items-center">
-                              <input type="checkbox" class="form-check-input">
-                              Всі параметри
-                            </label>
-                          </li>
-                          <li class="check-list__item">
-                            <label class="d-inline-flex align-items-center">
-                              <input type="checkbox" class="form-check-input">
-                              Тільки відмінності
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                     </div>
                   </div>
-                  <div class="text_semibold text_size-sm compare__title">Характеристики</div>
                   <div class="compare-table-heading__wrap">
-                    <table class="compare-table-heading table_spriped w-100">
-                      <tr><td>Сокет</td></tr>
-                      <tr><td>Частота ядра (номінальна)</td></tr>
-                      <tr><td>Частота ядра (максимальна)</td></tr>
-                      <tr><td>Загальна кількість ядер</td></tr>
-                      <tr><td>Продуктивні ядра</td></tr>
-                      <tr><td>Енергоефективні ядра</td></tr>
-                      <tr><td>Кількість потоків</td></tr>
-                      <tr><td>Тип пам'яті</td></tr>
-                      <tr><td>Макс. частота пам'яті</td></tr>
-                      <tr><td>Ядро</td></tr>
-                      <tr><td>Об'єм кеша L1</td></tr>
-                      <tr><td>Об'єм кеша L2</td></tr>
-                      <tr><td>Об'єм кеша L3</td></tr>
-                      <tr><td>З вбудованим відеоядром</td></tr>
-                      <tr><td>Набори спеціальних інструкцій</td></tr>
-                      <tr><td>Вільний множник</td></tr>
-                      <tr><td>Техпроцес</td></tr>
-                      <tr><td>TDP</td></tr>
-                      <tr><td>Технології</td></tr>
-                      <tr><td>Тип упаковки</td></tr>
-                      <tr><td>Система охолодження у комплекті</td></tr>
+                    <div class="compare-nav d-flex">
+                      <a href="#all" class="active compare-nav__item">Всі параметри</a>
+                      <a href="#duties" class="compare-nav__item">Тільки відмінності</a>
+                    </div>
+                    <table class="compare-table-heading table_spriped w-100 text_semibold">
+                      <tr><td><a href="#row-1" class="compare-link dropdown-toggle active">Сокет</a></td></tr>
+                      <tr><td><a href="#row-2" class="compare-link dropdown-toggle active">Частота ядра (номінальна)</a></td></tr>
+                      <tr><td><a href="#row-3" class="compare-link dropdown-toggle active">Частота ядра (максимальна)</a></td></tr>
+                      <tr><td><a href="#row-4" class="compare-link dropdown-toggle active">Загальна кількість ядер</a></td></tr>
+                      <tr><td><a href="#row-5" class="compare-link dropdown-toggle active">Продуктивні ядра</a></td></tr>
+                      <tr><td><a href="#row-6" class="compare-link dropdown-toggle active">Енергоефективні ядра</a></td></tr>
+                      <tr><td><a href="#row-7" class="compare-link dropdown-toggle active">Кількість потоків</a></td></tr>
+                      <tr><td><a href="#row-8" class="compare-link dropdown-toggle active">Тип пам'яті</a></td></tr>
+                      <tr><td><a href="#row-9" class="compare-link dropdown-toggle active">Макс. частота пам'яті</a></td></tr>
+                      <tr><td><a href="#row-10" class="compare-link dropdown-toggle active">Ядро</a></td></tr>
+                      <tr><td><a href="#row-11" class="compare-link dropdown-toggle active">Об'єм кеша L1</a></td></tr>
+                      <tr><td><a href="#row-12" class="compare-link dropdown-toggle active">Об'єм кеша L2</a></td></tr>
+                      <tr><td><a href="#row-13" class="compare-link dropdown-toggle active">Об'єм кеша L3</a></td></tr>
+                      <tr><td><a href="#row-14" class="compare-link dropdown-toggle active">З вбудованим відеоядром</a></td></tr>
+                      <tr><td><a href="#row-15" class="compare-link dropdown-toggle active">Набори спеціальних інструкцій</a></td></tr>
+                      <tr><td><a href="#row-16" class="compare-link dropdown-toggle active">Вільний множник</a></td></tr>
+                      <tr><td><a href="#row-17" class="compare-link dropdown-toggle active">Техпроцес</a></td></tr>
+                      <tr><td><a href="#row-18" class="compare-link dropdown-toggle active">TDP</a></td></tr>
+                      <tr><td><a href="#row-19" class="compare-link dropdown-toggle active">Технології</a></td></tr>
+                      <tr><td><a href="#row-20" class="compare-link dropdown-toggle active">Тип упаковки</a></td></tr>
+                      <tr><td><a href="#row-21" class="compare-link dropdown-toggle active">Система охолодження у комплекті</a></td></tr>
                     </table>
                   </div>
                 </div>
@@ -132,28 +118,28 @@
                             <a href="#" class="btn btn_secondary w-100_md btn_size-sm compare-item__btn">Обрати</a>
                           </div>
                         </div>
-                        <table class="table_spriped compare-item__table text_right w-100">
-                          <tr><td>s-AM4</td></tr>
-                          <tr><td>3,4 ГГц</td>
-                          <tr><td>4,6 ГГц</td>
-                          <tr><td>8</td>
-                          <tr><td>8</td>
-                          <tr><td>0</td>
-                          <tr><td>16</td>
-                          <tr><td>DDR4</td>
-                          <tr><td>3200 МГц</td>
-                          <tr><td>Vermeer</td>
-                          <tr><td>512 КБ</td>
-                          <tr><td>4 МБ</td>
-                          <tr><td>32 МБ</td>
-                          <tr><td>немає</td>
-                          <tr><td>AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</td>
-                          <tr><td>є</td>
-                          <tr><td>7 нм</td>
-                          <tr><td>65 Вт</td>
-                          <tr><td>AMD Symmetric Multi-Threading</td>
-                          <tr><td>роздрібна коробка</td>
-                          <tr><td>немає</td>
+                        <table class="table_spriped compare-item__table w-100">
+                          <tr data-id="row-1"><td>s-AM4</td></tr>
+                          <tr data-id="row-2"><td>3,5 ГГц</td>
+                          <tr data-id="row-3"><td>4,2 ГГц</td>
+                          <tr data-id="row-4"><td>10</td>
+                          <tr data-id="row-5"><td>8</td>
+                          <tr data-id="row-6"><td>0</td>
+                          <tr data-id="row-7"><td>16</td>
+                          <tr data-id="row-8"><td>DDR4</td>
+                          <tr data-id="row-9"><td>3200 МГц</td>
+                          <tr data-id="row-10"><td>Vermeer</td>
+                          <tr data-id="row-11"><td>512 КБ</td>
+                          <tr data-id="row-12"><td>5 МБ</td>
+                          <tr data-id="row-13"><td>32 МБ</td>
+                          <tr data-id="row-14"><td>немає</td>
+                          <tr data-id="row-15"><td>AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</td>
+                          <tr data-id="row-16"><td>є</td>
+                          <tr data-id="row-17"><td>7 нм</td>
+                          <tr data-id="row-18"><td>65 Вт</td>
+                          <tr data-id="row-19"><td>AMD Symmetric Multi-Threading</td>
+                          <tr data-id="row-20"><td>роздрібна коробка</td>
+                          <tr data-id="row-21"><td>немає</td>
                         </table>
                       </div>
                     </div>
@@ -171,28 +157,28 @@
                             <a href="#" class="btn btn_secondary w-100_md btn_size-sm compare-item__btn">Обрати</a>
                           </div>
                         </div>
-                        <table class="table_spriped compare-item__table text_right w-100">
-                          <tr><td>s-AM4</td></tr>
-                          <tr><td>3,4 ГГц</td>
-                          <tr><td>4,6 ГГц</td>
-                          <tr><td>8</td>
-                          <tr><td>8</td>
-                          <tr><td>0</td>
-                          <tr><td>16</td>
-                          <tr><td>DDR4</td>
-                          <tr><td>3200 МГц</td>
-                          <tr><td>Vermeer</td>
-                          <tr><td>512 КБ</td>
-                          <tr><td>4 МБ</td>
-                          <tr><td>32 МБ</td>
-                          <tr><td>немає</td>
-                          <tr><td>AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</td>
-                          <tr><td>є</td>
-                          <tr><td>7 нм</td>
-                          <tr><td>65 Вт</td>
-                          <tr><td>AMD Symmetric Multi-Threading</td>
-                          <tr><td>роздрібна коробка</td>
-                          <tr><td>немає</td>
+                        <table class="table_spriped compare-item__table w-100">
+                          <tr data-id="row-1"><td>s-AM4</td></tr>
+                          <tr data-id="row-2"><td>3,6 ГГц</td>
+                          <tr data-id="row-3"><td>4,2 ГГц</td>
+                          <tr data-id="row-4"><td>10</td>
+                          <tr data-id="row-5"><td>8</td>
+                          <tr data-id="row-6"><td>0</td>
+                          <tr data-id="row-7"><td>16</td>
+                          <tr data-id="row-8"><td>DDR4</td>
+                          <tr data-id="row-9"><td>3200 МГц</td>
+                          <tr data-id="row-10"><td>Vermeer</td>
+                          <tr data-id="row-11"><td>512 КБ</td>
+                          <tr data-id="row-12"><td>5 МБ</td>
+                          <tr data-id="row-13"><td>32 МБ</td>
+                          <tr data-id="row-14"><td>немає</td>
+                          <tr data-id="row-15"><td>AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</td>
+                          <tr data-id="row-16"><td>є</td>
+                          <tr data-id="row-17"><td>7 нм</td>
+                          <tr data-id="row-18"><td>65 Вт</td>
+                          <tr data-id="row-19"><td>AMD Symmetric Multi-Threading</td>
+                          <tr data-id="row-20"><td>роздрібна коробка</td>
+                          <tr data-id="row-21"><td>немає</td>
                         </table>
                       </div>
                     </div>
@@ -210,29 +196,45 @@
                             <a href="#" class="btn btn_secondary w-100_md btn_size-sm compare-item__btn">Обрати</a>
                           </div>
                         </div>
-                        <table class="table_spriped compare-item__table text_right w-100">
-                          <tr><td>s-AM4</td></tr>
-                          <tr><td>3,4 ГГц</td>
-                          <tr><td>4,6 ГГц</td>
-                          <tr><td>8</td>
-                          <tr><td>8</td>
-                          <tr><td>0</td>
-                          <tr><td>16</td>
-                          <tr><td>DDR4</td>
-                          <tr><td>3200 МГц</td>
-                          <tr><td>Vermeer</td>
-                          <tr><td>512 КБ</td>
-                          <tr><td>4 МБ</td>
-                          <tr><td>32 МБ</td>
-                          <tr><td>немає</td>
-                          <tr><td>AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</td>
-                          <tr><td>є</td>
-                          <tr><td>7 нм</td>
-                          <tr><td>65 Вт</td>
-                          <tr><td>AMD Symmetric Multi-Threading</td>
-                          <tr><td>роздрібна коробка</td>
-                          <tr><td>немає</td>
+                        <table class="table_spriped compare-item__table w-100">
+                          <tr data-id="row-1"><td>s-AM4</td></tr>
+                          <tr data-id="row-2"><td>3,5 ГГц</td>
+                          <tr data-id="row-3"><td>4,2 ГГц</td>
+                          <tr data-id="row-4"><td>10</td>
+                          <tr data-id="row-5"><td>6</td>
+                          <tr data-id="row-6"><td>0</td>
+                          <tr data-id="row-7"><td>16</td>
+                          <tr data-id="row-8"><td>DDR5</td>
+                          <tr data-id="row-9"><td>3200 МГц</td>
+                          <tr data-id="row-10"><td>Vermeer</td>
+                          <tr data-id="row-11"><td>512 КБ</td>
+                          <tr data-id="row-12"><td>5 МБ</td>
+                          <tr data-id="row-13"><td>32 МБ</td>
+                          <tr data-id="row-14"><td>немає</td>
+                          <tr data-id="row-15"><td>AVX, AVX2.0, SSE4.1, SSE4.2, SSE4A</td>
+                          <tr data-id="row-16"><td>є</td>
+                          <tr data-id="row-17"><td>7 нм</td>
+                          <tr data-id="row-18"><td>65 Вт</td>
+                          <tr data-id="row-19"><td>AMD Symmetric Multi-Threading</td>
+                          <tr data-id="row-20"><td>роздрібна коробка</td>
+                          <tr data-id="row-21"><td>немає</td>
                         </table>
+                      </div>
+                    </div>
+                    <div class="swiper-slide d-md-none">
+                      <div class="compare-filter">
+                        <div class="filter__header filter-item d-flex justify-content-between">
+                          <button type="reset" class="btn-clear d-inline-flex align-items-center">
+                            <span class="icon icon-del-dark btn-clear__icon"></span>
+                            Очистити усі
+                          </button>
+                        </div>
+                        <div class="filter-item">
+                          <a href="mainv1-block.html" class="compare-add">
+                            <div class="compare-add__icon"><div class="icon icon-plus"></div></div>
+                            <div class="text_dark">Додати до порівняння</div>
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

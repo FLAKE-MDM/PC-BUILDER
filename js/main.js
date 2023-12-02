@@ -179,13 +179,16 @@ $(".sort-arrow").click(function(e){
 // fixed nav
 document.addEventListener("DOMContentLoaded", function(){
   let componentsNav = document.querySelector('.components-nav');
-  let componentsNavTop = componentsNav.offsetTop;
 
-  window.onscroll = function(){
-    if(window.pageYOffset > componentsNavTop){
-      $(componentsNav).addClass("fixed");
-    } else{
-      $(componentsNav).removeClass("fixed");
+  if(componentsNav){
+    let componentsNavTop = componentsNav.offsetTop;
+
+    window.onscroll = function(){
+      if(window.pageYOffset > componentsNavTop){
+        $(componentsNav).addClass("fixed");
+      } else{
+        $(componentsNav).removeClass("fixed");
+      }
     }
   }
 });
@@ -297,14 +300,11 @@ $(".pass-view").click(function(e){
 
 // compare
 let compareSlider =  new Swiper(".compare-slider", {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  slidesPerView: 2,
+  spaceBetween: 20,
   breakpoints: {
-    576: {
-      slidesPerView: 2,
+    768: {
+      spaceBetween: 0,
     },
     1200: {
       slidesPerView: 3,
@@ -315,21 +315,99 @@ let compareSlider =  new Swiper(".compare-slider", {
 let compareTableHeadingRows = document.querySelectorAll(".compare-table-heading tr");
 let compareTables = document.querySelectorAll(".swiper-slide .compare-item__table");
 
-
 for(let table of compareTables){
   for(let i = 0; i < compareTableHeadingRows.length; i++){
     let rowHeightHeading = parseInt(getComputedStyle(compareTableHeadingRows[i]).height);
     let rowHeight = parseInt(getComputedStyle(table.rows[i]).height);
 
-    if(rowHeightHeading > rowHeight){
-      table.rows[i].style.height = rowHeightHeading + "px"
-    }
-
-    if(rowHeightHeading < rowHeight){
-      compareTableHeadingRows[i].style.height = rowHeight + "px"
+    if(window.innerWidth > 767){
+      if(rowHeightHeading > rowHeight){
+        table.rows[i].style.height = rowHeightHeading + "px"
+      }
+  
+      if(rowHeightHeading < rowHeight){
+        compareTableHeadingRows[i].style.height = rowHeight + "px"
+      }
+    } else{
+      $(compareTableHeadingRows[i]).find('.compare-link').css('margin-bottom', rowHeight - 14 + 'px');
     }
   }
-}
+};
+
+$(document).ready(function() {
+  let tables = $('.compare-item__table');
+  let differentRows = [];
+
+  $('tr', tables.eq(0)).each(function(rowIdx) {
+    var rowValues = [];
+
+    $('td', this).each(function(colIdx) {
+      var cellValue = $(this).text();
+      rowValues[colIdx] = cellValue;
+    });
+
+      var isDifferentRow = false;
+      tables.each(function(tableIdx) {
+      var currentRow = $('tr:eq(' + rowIdx + ')', this);
+
+      currentRow.find('td').each(function(colIdx) {
+        var cellValue = $(this).text();
+
+        if (rowValues[colIdx] !== cellValue) {
+          isDifferentRow = true;
+          return false;
+        }
+      });
+    });
+
+    differentRows.push(isDifferentRow ? 'different-value' : '');
+  });
+
+  for (let i = 0; i < differentRows.length; i++) {
+    if (differentRows[i] === 'different-value') {
+      tables.each(function (tableIdx) {
+        var currentRow = $('tr:eq(' + i + ')', tables.eq(tableIdx));
+        currentRow.addClass('different-value');
+      });
+
+      $('.compare-table-heading tr:eq(' + i + ')').addClass('different-value');
+    }
+  }
+});
+
+
+
+$('.compare-nav__item').click(function(e){
+  e.preventDefault();
+  $('.compare-nav__item').removeClass("active");
+  $(this).addClass("active");
+
+  if($(this).attr('href') == '#duties'){
+    $('.compare-item__table tr, .compare-table-heading tr').hide();
+    $('tr.different-value').show();
+  } else{
+    $('.compare-item__table tr, .compare-table-heading tr').show();
+  }
+});
+
+
+$(".compare-link").click(function(e){
+  e.preventDefault();
+
+  let thisID = this.getAttribute("href").slice(1)
+
+  let target = $(`[data-id=${thisID}]`);
+
+  if($(this).hasClass("active")){
+    target.addClass('hide');
+  } else{
+    target.removeClass('hide');
+  }
+
+  $(this).toggleClass("active");
+});
+
+
 
 // remove
 $(".remove-link").click(function(e){
@@ -404,19 +482,17 @@ if(window.innerWidth < 768){
   });
 
   $(document).on('mousedown touchstart', '.packing-item_swipe', function(event) {
-    // Запоминаем начальную позицию прикосновения
+
     $(this).data('startX', event.pageX || event.originalEvent.touches[0].pageX);
   });
 
   $(document).on('mouseup touchend', '.packing-item_swipe', function(event) {
       const startX = $(this).data('startX');
-      // Определяем конечную позицию прикосновения
+
       const endX = event.pageX || event.originalEvent.changedTouches[0].pageX;
 
-      // Расстояние, на которое был совершен свайп
       const distance = endX - startX;
 
-      // Если свайп был влево (отрицательное расстояние), смещаем элемент влево и удаляем
       if (distance < -50) {
           $(this).animate({ margin: '0 100% 0 -100%' }, 500, function() {
               $(this).remove();

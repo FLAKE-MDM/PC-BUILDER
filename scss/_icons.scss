@@ -446,3 +446,13 @@
         background-image: url(../img/icons/amd-inversion.svg);
     }
 }
+.icon-plus{
+    width: 5.3rem;
+    height: 5.3rem;
+    background-image: url(../img/icons/plus.svg);
+
+    @include bp(sm){
+        width: 4.3rem;
+        height: 4.3rem;
+    }
+}

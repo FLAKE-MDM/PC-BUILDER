@@ -15,7 +15,7 @@
     }
 
     @include bp(sm){
-      padding-top: 0.4rem;
+      padding: 0.4rem 0 1.6rem;
     }
 
     &__btn{
@@ -28,7 +28,7 @@
 
         @include bp(sm){
             font-size: 1rem;
-            padding: 0.3rem 2.7rem 0.4rem;
+            padding: 0.6rem 3.7rem 0.5rem;
             margin-top: 0.3rem;
         }
     }
@@ -59,7 +59,8 @@
         }
 
         @include bp(sm){
-            gap: 2.95rem;
+            gap: 2.45rem;
+            margin-bottom: 0.2rem;
         }
     }
 
